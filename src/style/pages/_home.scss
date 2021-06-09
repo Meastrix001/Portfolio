@@ -2,51 +2,6 @@ h1 {
     margin: 0;
     padding: 0;
 }
-// body{
-//   width: 100vw;
-//   height: 100vh;
-//   .container{
-//     width: 100%;
-//     overflow: scroll;
-//     height: 100vh;
-//     scroll-snap-type: mandatory; /* for older browsers */
-//     scroll-snap-points-y: repeat(100vh); /* for older browsers */
-//     scroll-snap-stop: always;
-//     scroll-snap-type: x mandatory;
-//     display: flex;
-//     section{
-//       flex: none;
-//       scroll-behavior: smooth;
-//       height: 100vh;
-//       width: 100%;
-//       scroll-snap-align: start;
-//       position: relative;
-//       &:nth-of-type(1) {
-//         color: green;
-//       background-color: rgb(90, 90, 90);
-
-//       }
-//       &:nth-of-type(2) {
-//         color: blue;
-//       background-color: rgb(119, 119, 119);
-
-//       }
-//       &:nth-of-type(3) {
-//         color: pink;
-//       background-color: rgb(140, 140, 140);
-
-//       }
-//       &:nth-of-type(4) {
-//         color: orange;
-//       background-color: rgb(90, 90, 90);
-
-//       }
-//       h1{
-        
-//       }
-//     }
-//   }
-// }
 .home::-webkit-scrollbar {
   display: none;
 }
@@ -73,7 +28,7 @@ h1 {
     position: absolute;
     z-index: 2;
     background-color: rgba(0,0,0,.9);
-    background-image: url("../assets/img/background.jpg");
+    background-image: url("../assets/img/background.jpeg");
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;

@@ -1,0 +1,272 @@
+h1 {
+    margin: 0;
+    padding: 0;
+}
+// body{
+//   width: 100vw;
+//   height: 100vh;
+//   .container{
+//     width: 100%;
+//     overflow: scroll;
+//     height: 100vh;
+//     scroll-snap-type: mandatory; /* for older browsers */
+//     scroll-snap-points-y: repeat(100vh); /* for older browsers */
+//     scroll-snap-stop: always;
+//     scroll-snap-type: x mandatory;
+//     display: flex;
+//     section{
+//       flex: none;
+//       scroll-behavior: smooth;
+//       height: 100vh;
+//       width: 100%;
+//       scroll-snap-align: start;
+//       position: relative;
+//       &:nth-of-type(1) {
+//         color: green;
+//       background-color: rgb(90, 90, 90);
+
+//       }
+//       &:nth-of-type(2) {
+//         color: blue;
+//       background-color: rgb(119, 119, 119);
+
+//       }
+//       &:nth-of-type(3) {
+//         color: pink;
+//       background-color: rgb(140, 140, 140);
+
+//       }
+//       &:nth-of-type(4) {
+//         color: orange;
+//       background-color: rgb(90, 90, 90);
+
+//       }
+//       h1{
+        
+//       }
+//     }
+//   }
+// }
+.home::-webkit-scrollbar {
+  display: none;
+}
+.home{
+  width: 100%;
+	height: 100vh;
+	scroll-snap-type: y mandatory ;
+	overflow-y: scroll;
+   
+  .snap{
+	scroll-snap-align: end;
+  
+  }
+.hero{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 1rem  10rem rgb(158, 158, 158);
+  .backgroundimage{
+    width: 100%;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0,0,0,.9);
+    background-image: url("../assets/img/background.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+  }
+  section{
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    top: 41.5%;
+    left: 41.6%;
+    z-index: 3;
+    transform: translateY(-50%) translateX(-50%);
+    transition: 0.125s ease all;
+    @media (min-width: 400px) {
+      left: 50%;
+    }
+    @media (min-width: 1400px) {
+      top: 40%;
+    }
+  }
+}
+  .Web{
+    &::after{
+      content: "</web> ";
+      color: $text-orange;
+    }
+  }
+  .glitch {
+    color: white;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .glitch::after {
+    content: " Developer";
+    position: absolute;
+    left: 15.3px;
+    text-shadow: 1.1px 0 red;
+    top: 0;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+    animation: dissort-effect 2s infinite linear alternate-reverse;
+  }
+  .glitch::before {
+    content: " Developer";
+    position: absolute;
+    left: 9px;
+    text-shadow: 1.5px 0 blue;
+    top: 0;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+    animation: dissort-effect-2 15s infinite linear alternate-reverse;
+  }
+  @keyframes dissort-effect {
+    $steps: 20;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(10);
+        $bottom: random(101 - $top);
+        $topWithPercent: $top * 10%;
+        $bottomWithPercent: $bottom * 1%;
+        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+      }
+    }
+  }
+  
+  @keyframes dissort-effect-2 {
+    $steps: 25;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(20);
+        $bottom: random(50 - $top);
+        $topWithPercent: $top * 1%;
+        $bottomWithPercent: $bottom * 1%;
+        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+      }
+    }
+  }
+  .about{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-b;
+    &--me{
+      width: fit-content;
+      margin: auto;
+      text-align: center;
+      .Name{
+        color: $text-orange;
+      }
+    }
+    &--hobbies{
+      margin: 4rem 0;
+      &--cards{
+        width: 69%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+          height: fit-content;
+          margin: 3rem auto;
+        @media (min-width: $tablet){
+          width: 50%;
+        }
+        &-card{
+          height: fit-content;
+        width: fit-content;
+        margin: 0.5rem 1rem;
+        @media (min-width: $tablet){
+          flex-wrap: nowrap;
+          transform: rotate(-30deg);
+    
+        }
+        }
+      }
+    }
+
+    .rounded{
+      width: fit-content;
+      margin: auto;
+      margin-top: 2rem;
+      img{
+
+        border-radius: 100%;
+      }
+    }
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0 -6rem 9rem #9e9e9e87;
+    height: 100vh;
+    margin: 4rem 0 0 0;
+    box-sizing: border-box;
+    &--list{
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+      width: 100%;
+      margin-top: 2rem;
+      @media (min-width: $tablet) {
+        width: 45%;
+        
+      }
+      div{
+        margin: 0.5rem;
+        width: fit-content;
+        img{
+          width: 5rem;
+        }
+        p{
+          text-align: center;
+        }
+      }
+    }
+    &--services{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+      
+      width: 100%;
+      margin: 2rem 0;
+      transition: 0.125s ease all;
+      div{
+        @media (min-width: $tablet){
+          max-width: 33%;
+         }
+         @media (min-width: 800){
+          width: 30%;
+         }
+        margin: 0.5rem;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        img{
+          width: 8rem;
+          margin: auto;
+        }
+        p{
+          text-align: center;
+          width: 80%;
+          margin: auto;
+          @media (min-width: $tablet){
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}

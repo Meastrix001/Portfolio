@@ -1,0 +1,22 @@
+[
+  {
+    "skill": "JavaScript",
+    "logo": "/assets/img/logos/javascript.png"
+  },
+  {
+    "skill": "HTML",
+    "logo": "/assets/img/logos/html.png"
+  },
+  {
+    "skill": "CSS",
+    "logo": "/assets/img/logos/css.png"
+  },
+  {
+    "skill": "React",
+    "logo": "/assets/img/logos/react.png"
+  },
+  {
+    "skill": "GitHub",
+    "logo": "/assets/img/logos/github.png"
+  }
+]

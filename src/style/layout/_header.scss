@@ -1,0 +1,36 @@
+header{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  .nav{
+    ul{
+      max-width: 2000px;
+      margin: auto;
+      display: flex;
+      position: relative;
+      // justify-content: center;
+      align-content: flex-end;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 1rem 1rem;
+      li{
+        padding: 0 1rem;
+        list-style: none;
+        &.active{
+          transition: 0.125s ease;  
+            border-bottom: 4px solid $text-orange;
+        }
+        a{
+          text-decoration: none;
+          color: $text-orange;
+          transition: 0.125s ease all;
+          &:hover{
+            opacity: 50%;
+            border-bottom: 4px solid $text-orange;
+          }
+        }
+      }
+    }
+  }
+
+}

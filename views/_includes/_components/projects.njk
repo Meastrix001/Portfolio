@@ -1,0 +1,17 @@
+{% if projects | length %}
+      {% for project in projects %}
+            {% if project.preview === 1 %}
+              <section class="project">
+                      <div class="project--card ">
+                        <div>
+                          <embed src={{project.link}}>
+                          <h3>{{ project.name }}</h3>
+                        </div>
+                        <p class="project--card-span"><span>Assignment Number {{ project.number }}</span></p>
+                        <p>{{ project.desc }}</P>
+                        <p><a href={{ project.link }} target="_blank"><strong>{{ project.linkTo }}</strong></a></p>
+                      </div>
+              </section>
+            {% endif %}
+      {% endfor %}
+  {% endif %}

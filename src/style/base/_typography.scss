@@ -1,0 +1,101 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+*{
+  font-family: 'Ubuntu', sans-serif;}
+h1{
+  font-size: 1.4rem;
+}
+h2{
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+h3{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+h4{
+  font-weight: 500;
+}
+p{
+  font-weight: 500;
+  font-size: 1rem;
+}
+small{
+  font-weight: 400;
+}
+strong{
+  font-weight: 700;
+}
+span{
+  font-weight: 700;
+}
+a{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.herotext{
+  font-size: 1.2rem;
+}
+@media(min-width: 975px ){
+  .herotext{
+    font-size: 1.5rem;
+  }
+  h1{
+      font-size: 1.8rem;
+  }
+  h2{
+    font-size: 1.6rem;
+  }
+  h3{
+  font-size: 1.5rem;
+  }
+  h4{
+  
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  small{
+
+  }
+  span{
+
+  }
+  strong{
+
+  }
+  a{
+  }
+}
+
+@media(min-width:1400px ){
+  .herotext{
+    font-size: 2.2rem;
+  }
+  h1{
+      font-size: 4rem;
+  }
+  h2{
+    font-size: 2.2rem;
+  }
+  h3{
+  
+  }
+  h4{
+    font-size: 1.6rem;
+  }
+  p{
+
+  }
+  small{
+
+  }
+  strong{
+
+  }
+  a{
+    font-size: 1.8rem;
+  }
+}

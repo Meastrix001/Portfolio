@@ -10,7 +10,6 @@
     "watch:eleventy": "npx eleventy --serve",
     "start": "npm-run-all sass --parallel watch:*",
     "build": "npm run sass && npm run eleventy --pathprefix 'Portfolio' "
-    
   },
   "repository": {
     "type": "git",

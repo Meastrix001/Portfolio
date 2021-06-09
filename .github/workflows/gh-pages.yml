@@ -1,5 +1,6 @@
 on:
   push:
+  main
     branches-ignore:
       - "gh-pages"
 jobs:

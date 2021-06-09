@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
-  "description": "A simple landing page made with Eleventy",
+  "description": "Portfolio made with Eleventy and SASS",
   "main": "index.js",
   "scripts": {
     "eleventy": "npx eleventy",
@@ -9,7 +9,7 @@
     "watch:sass": "npm run sass -- --watch",
     "watch:eleventy": "npx eleventy --serve",
     "start": "npm-run-all sass --parallel watch:*",
-    "build": "npm run eleventy && npm run sass" 
+    "build": "npm run eleventy --pathprefix 'Portfolio' && npm run sass"
     
   },
   "repository": {

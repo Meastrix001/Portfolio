@@ -18,5 +18,13 @@
   {
     "skill": "GitHub",
     "logo": "./assets/img/logos/github.png"
+  },
+  {
+    "skill": "Sass",
+    "logo": "./assets/img/logos/sass.png"
+  },
+  {
+    "skill": "11ty",
+    "logo": "./assets/img/logos/11ty.svg"
   }
 ]

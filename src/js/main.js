@@ -2,9 +2,10 @@ const app = {
   initialize () {
     this.cacheElements();
     this.registerEventListeners();
+    this.showToTopButton()
   },
   cacheElements () {
-    // this.btnToTopElement = document.querySelector('.btn-to-top');
+    this.btnToTopElement = document.querySelector('.btn-to-top');
     this.$menuOpen = document.querySelector('.btn-open')
     this.$menuClose = document.querySelector('.btn-close')
     this.$nav = document.querySelector('.nav')
@@ -12,15 +13,6 @@ const app = {
     // this.navIcons = document.querySelector('.account')
   },
   registerEventListeners () {
-    // if (this.btnToTopElement !== null) {
-    //   this.btnToTopElement.addEventListener('click', (ev) => {
-    //     window.scrollTo({
-    //       top: 0,
-    //       left: 0,
-    //       behavior: 'smooth',
-    //     });
-    //   });
-    // }
     if (this.$projectCard) {
       console.log(this.$projectCard)
       this.$projectCard.forEach(card => {

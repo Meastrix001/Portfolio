@@ -130,7 +130,7 @@ h1 {
           max-width: 30%;
         }
         &:hover{
-          transform: scale(1.2);
+          transform: scale(1.5);
           z-index: 1;
         }
       article{
@@ -160,7 +160,8 @@ h1 {
             position: absolute;
             text-align: center;
             width: 100%;
-            color: red;
+            color: black;
+            background: white;
           }
         }
       }
@@ -237,9 +238,13 @@ h1 {
         margin: 0.5rem;
         width: fit-content;
         transition: 0.2s ease all;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
         &:hover{
           cursor: pointer;
-          transform: scale(1.2)
+          transform: scale(1.4)
         }
         img{
           width: 5rem;

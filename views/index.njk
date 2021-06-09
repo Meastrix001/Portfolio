@@ -55,12 +55,52 @@ eleventyNavigation:
              <section class="wrapper">
                 <p class="underlined"></p>
                 <h2 class="subtitle" >Besides Developing websites.., This is my other passion!</h2>
-                <p class="subtext">1955 Ford Thunderbird with a 6.4L v8</p>
+                <p class="subtext">1954 Ford Thunderbird with a 6.4L v8</p>
                 <figure class="rounded">
                     <img src="./assets/img/t-bird.jpg" alt="">
                 </figure>
             </section>
     </section> 
+    
+        <section class="work snap">
+
+            <section class="wrapper">
+                <h3 class="subtitle">My <span class="text-orange">work</span>.</h3>
+            </section>
+
+            <section class="wrapper work--cards">
+                {% for project in projects %}
+                    {% if project.preview === true %}
+                            <a target="blank_"href={{ project.link }}>
+                        <article>
+                                <figure>
+                                    <img src={{ project.logo }}>
+                                </figure>
+                                <p>{{project.name}}</p>
+                        </article>
+                            </a>
+                    {% endif %}
+                {% endfor %}
+            </section>
+
+                        <section class="wrapper work--cards">
+                {% for project in projects %}
+                    {% if project.preview !== true %}
+                            <a target="_blank"href={{ project.link }}>
+                        <article>
+                                <figure>
+                                    <img src={{ project.logo }}>
+                                </figure>
+                                <p>{{project.name}}</p>
+                        </article>
+                            </a>
+                    {% endif %}
+                {% endfor %}
+            </section>
+
+            
+    </section>
+    
 
     <section class="skills snap">
         <section class="wrapper">
@@ -94,6 +134,6 @@ eleventyNavigation:
     </section>
 
     <footer class="snap">
-       {% include "_components/footer.njk" %}
+        {% include "_components/footer.njk" %}
     </footer>
 </div>

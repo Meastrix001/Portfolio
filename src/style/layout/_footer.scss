@@ -26,6 +26,7 @@ footer{
           margin: 0.2rem 0;
           list-style: none;
           border-bottom: 4px solid #c3c3c3;
+          transition: 0.125s ease all;
           &:hover{
             opacity: 50%;
             border-bottom: 4px solid $text-orange;

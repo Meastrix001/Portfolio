@@ -40,12 +40,12 @@
   },
   {
     "number": "5",
-    "linkTo": "Go to Repository.",
+    "linkTo": "Go to the Github page and see the full site!",
     "preview": false,
-    "logo": "./assets/img/tinder.jpg",
-    "name": "A tinder API (unfinished)",
-    "link": "https://github.com/pgmpgent-2021-pgm-2/pgm-2_project_2-Meastrix001/settings/pages",
-    "desc": "A tinder clone, unfinshed"
+    "logo": "./assets/img/logos/mailchimp.png",
+    "name": "A mailchimp survey result",
+    "link": "https://meastrix001.github.io/IT-Buss-Mailchimp/",
+    "desc": "A A mailchimp survey result for IT-Buss"
   },
   {
     "number": "6",
@@ -53,7 +53,7 @@
     "preview": false,
     "logo": "./assets/img/logos/quiz.jpg",
     "name": "A Developer Quiz",
-    "link": "https://gdmgent-mobdev1.github.io/2021-labo01-Meastrix001/",
+    "link": "https://pgmgent-pgm-3.github.io/opdracht-1---developer-quiz-Meastrix001/",
     "desc": "A Developer quiz made with a WIP quiz API"
   }
 ]

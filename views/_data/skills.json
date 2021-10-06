@@ -4,6 +4,18 @@
     "logo": "./assets/img/logos/javascript.png"
   },
   {
+    "skill": "TypeScript",
+    "logo": "./assets/img/logos/typescript.png"
+  },
+  {
+    "skill": "React",
+    "logo": "./assets/img/logos/react.png"
+  },
+  {
+    "skill": "Php",
+    "logo": "./assets/img/logos/php.png"
+  },
+  {
     "skill": "HTML",
     "logo": "./assets/img/logos/html.png"
   },
@@ -12,8 +24,8 @@
     "logo": "./assets/img/logos/css.png"
   },
   {
-    "skill": "React",
-    "logo": "./assets/img/logos/react.png"
+    "skill": "GraphQL",
+    "logo": "./assets/img/logos/Graphql.png"
   },
   {
     "skill": "GitHub",
@@ -26,5 +38,9 @@
   {
     "skill": "11ty",
     "logo": "./assets/img/logos/11ty.svg"
+  },
+  {
+    "skill": "Blender",
+    "logo": "./assets/img/logos/blender.png"
   }
 ]

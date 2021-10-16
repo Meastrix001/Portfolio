@@ -1,41 +1,15 @@
-@charset "UTF-8";
-
-// 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
-
-// 2. Vendors
-@import
-  'vendors/font',
-  'vendors/grid',
-  'vendors/normalize';
-
-// 3. Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
-
-// 4. Layout-related sections
-@import
-  'layout/features',
-  'layout/header',
-  'layout/footer',
-  'layout/hero';
-
-// 5. Components
-@import
-  'components/button',
-  'components/image',
-  'components/qoute';
-
-// 6. Page-specific styles
-@import
-  'pages/home',
-  'pages/contact.scss',
-  'pages/about-us.scss',
-  'pages/projects.scss',
-  'pages/main.scss';
+@import "./abstracts/fonts";
+@import "./abstracts/variables";
+@import "./vendors/bootstrap";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/navigation-footer";
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./pages/home";
+@import "./pages/services";
+@import "./pages/work";
+@import "./pages/team";
+@import "./pages/contact";

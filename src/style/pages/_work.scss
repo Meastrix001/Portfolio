@@ -1,0 +1,118 @@
+.work{
+display: flex;
+flex-wrap: wrap;
+&--menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 80vh;
+  section{
+    width: 100%;
+    @media (min-width: 750px) {
+      width: 50%;
+    }
+    div{
+      width: 100%;
+    }
+    ul{
+      padding: 1rem;
+      padding-inline-start: 20px;
+      li{
+        list-style: none;
+        color: black;
+
+        a{
+          color: $Rood;
+          font-weight: 700;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+&--cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  &--card{
+    padding: 1rem;
+    @media (min-width:750px) {
+      display: flex;
+      transition: 0.125s ease all;
+    
+      &:nth-child(2n+0){
+      flex-direction: row-reverse;
+      transition: 0.125s ease all;
+
+      }
+    }
+      h2{
+        color: $Rood;
+        }
+      a{
+        width: 49%;
+        height: inherit;
+        position: relative;
+        p{
+          margin-top: -1.5rem;
+          transition: 0.1s ease all;
+          background-color: $Rood;
+          opacity: 100;
+          @media(min-width:750px){
+          margin-top: 0;
+
+            top: 0;
+            position: absolute;
+            opacity: 0;
+            transition: 0.125s ease all;
+          }
+        }
+        &:hover{
+          p{
+            transition: 0.1s ease all;
+            opacity: 100;
+          }
+        }
+        img{
+          max-width: 100%;
+          width: 100%;
+          max-height: 25rem;
+          height: 100%;
+          transition: 0.125s ease;
+  
+          &:hover{
+              box-shadow: -0.5rem -0.5rem $Rood;
+              transition: 0.125s ease;
+              cursor: pointer;
+              
+          }
+        }
+      }
+      div{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: auto ;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        transition: 0.125s ease all;
+
+        @media (min-width:750px) {
+          margin: 0 1rem;
+          width: 49%;
+          transition: 0.125s ease all;
+        }
+        h4{
+
+          a{
+            color: $LichtWit;
+          }
+        }
+      }
+    }
+  }
+}

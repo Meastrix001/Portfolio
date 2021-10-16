@@ -1,14 +1,20 @@
 [
   {
-    "desc": "From back-end to front-end website development, i'll leave you with a product that is functional, effective and engaging to your end-users.",
-    "logo": "./assets/img/webDev.png"
+    "title": "idea",
+    "subTitle": "research & design",
+    "desc": "Everything start with an idea, A vision. By going trough research and designs i will make sure you have a website that is user friendly, safe and exceeds expectations."
+
   },
   {
-    "desc": "i can support you in creating your prototype app, scaling your existing mobile product or building impressive, complex solutions from scratch.",
-    "logo": "./assets/img/mobileDev.png"
+    "title": "Develop & Testing",
+    "subTitle": "Building the product",
+    "desc": "After going trough step 1 of designing, development can begin, Making the front-end, Creating the back-end, And bringing those visions, Ideas, And design to reality."
+
   },
   {
-    "desc": "My expertise covers Product, Design, UX Design, Illustration and Brand Design.",
-    "logo": "./assets/img/design.png"
+    "title": "enjoy",
+    "subTitle": "Deployment",
+    "desc": "After the website is build, Its time to deploy, quickly work out possible kinks or bugs that passed previous testing, and see all the hard work pay off by seeing the product up and running."
+
   }
 ]

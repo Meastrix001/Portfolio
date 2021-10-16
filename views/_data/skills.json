@@ -1,46 +1,68 @@
 [
   {
     "skill": "JavaScript",
-    "logo": "./assets/img/logos/javascript.png"
+    "logo": "assets/img/logos/javascript.png",
+    "learning": 0,
+    "favourite": true
   },
   {
     "skill": "TypeScript",
-    "logo": "./assets/img/logos/typescript.png"
+    "logo": "assets/img/logos/typescript.png",
+    "learning": 1,
+    "favourite": false
   },
   {
     "skill": "React",
-    "logo": "./assets/img/logos/react.png"
+    "logo": "assets/img/logos/react.png",
+    "learning": 0,
+    "favourite": true
   },
   {
     "skill": "Php",
-    "logo": "./assets/img/logos/php.png"
+    "logo": "assets/img/logos/php.png",
+    "learning": 1,
+    "favourite": false
   },
   {
     "skill": "HTML",
-    "logo": "./assets/img/logos/html.png"
+    "logo": "assets/img/logos/html.png",
+    "learning": 0,
+    "favourite": true
   },
   {
     "skill": "CSS",
-    "logo": "./assets/img/logos/css.png"
+    "logo": "assets/img/logos/css.png",
+    "learning": 0,
+    "favourite": true
   },
   {
     "skill": "GraphQL",
-    "logo": "./assets/img/logos/Graphql.png"
+    "logo": "assets/img/logos/Graphql.png",
+    "learning": 1,
+    "favourite": false
   },
   {
     "skill": "GitHub",
-    "logo": "./assets/img/logos/github.png"
+    "logo": "assets/img/logos/github.png",
+    "learning": 0,
+    "favourite": false
   },
   {
     "skill": "Sass",
-    "logo": "./assets/img/logos/sass.png"
+    "logo": "assets/img/logos/sass.png",
+    "learning": 0,
+    "favourite": true
   },
   {
     "skill": "11ty",
-    "logo": "./assets/img/logos/11ty.svg"
+    "logo": "assets/img/logos/11ty.svg",
+    "learning": 0,
+    "favourite": true
   },
   {
     "skill": "Blender",
-    "logo": "./assets/img/logos/blender.png"
+    "logo": "assets/img/logos/blender.png",
+    "learning": 1,
+    "favourite": false
   }
 ]

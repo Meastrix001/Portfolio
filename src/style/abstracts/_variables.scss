@@ -1,60 +1,17 @@
-// Colors
-$primary: #020000;
-$gray: #555555;
-$whitish: #f2f2f2;
-$orange: rgb(255, 81, 0);
-$orange-hover: rgb(213, 68, 0);
+$font-family-source-sans-pro: 'Source Sans Pro', sans-serif;
+$font-family-Roboto: 'Roboto', sans-serif;
+$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
 
+$ahs-purple: #7E57C5;
+$ahs-pink: #D20082;
+$ahs-red: #ED0034;
+$ahs-orange: #F58732;
+$ahs-green: #5AB946;
+$ahs-blue: #00A5D9;
 
-$primary-gray: #d4d3d3;
-$primary-black: black;
-$primary-red: #770101;
-$text-orange: rgb(179, 116, 0);
-
-// Font-size
-$text-sm: .85rem;
-$text-base: 1rem;
-$text-md: 1.25rem;
-$text-lg: 2rem;
-
-// Widths
-$large-container: 1240px;
-$mobile: 550px;
-$tablet: 875px;
-$desktop: 1400px;
-$max-width: 1600px;
-
-// Radius
-$radius-sm: 0.25rem;
-
-// Spacing
-$spacing-sm: 0.5rem;
-$spacing-base: 1rem;
-$spacing-md: 1.5rem;
-$spacing-lg: 2.5rem;
-
-.container{
-margin:  4rem 0;
-}
-
-.wrapper{
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1600px;
-  box-sizing: border-box;
-  margin: auto;
-}
-.subtitle{
-  width: fit-content;
-  margin: auto;
-}
-.subtext{
-  width: fit-content;
-margin: 0 auto;
-}
-.text-orange{
-  color: $text-orange;
-}
-// .container{
-//   margin: 6rem auto;
-// }
+$spacing: 18;
+$Rood: #F24C4C;
+$Zwart: #1D1D1D;
+$LichtZwart: #272727;
+$LichtGrijs: #EFEFEF;
+$LichtWit: #a7a7a7;

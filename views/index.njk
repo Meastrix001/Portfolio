@@ -1,177 +1,315 @@
 ---
-layout: base
 root: ./
-title: Home
+layout: layouts/base.njk
 eleventyNavigation:
     key: Home
     order: 1
+title: Home
+description: Get great at designing amazing websites and mobile applications with high-performance code and neat graphics. In the Associate Degree in Computer Programming you will learn all the tricks of the digital trade.
 ---
-
-<div class="pagecontent home">
-
-    <section class="hero snap">
-        <img class="backgroundimage">
-        <section>
-            <h1 id="top">Nick Roofthooft</h1>
-            <p class="herotext">Currently a <span class="Web"></span><span class="glitch"></span></p>
-            <p class="herotext">And future WebDesinger to be</p>
-            <div class="animated-underlinr">
-                <span class="animated-underlinr-color"></span>
-            </div>
-        </section>
-    </section>
-
-    <section class="about snap">
-            <section class="about--me wrapper">
-                <div>
-                    <h2>Hello, My name is <span class="Name">Nick Roofthooft.</span></h2>
-                    <p class="underlined"></p>
-                    <p>I am a student as Artevelde Hogeschool in my second year Programming.</p>
-                    <p>Ive always been intrested in computers as a whole... building them, repairing them, and understanding them.</p>
-                    <p>But i could never "really" understand them.., if i didn't knew how they worked.. so with that, and my Dad who also does this, ive build a passion for Developing and designing websites.</p>
-                </div>
-            </section>
-
-            <section class="">
-                <h2 class="subtitle">Some hobbies of mine</h2>
-                <div class="about--hobbies--cards">
-                    <div class="about--hobbies--cards-card">
-                        <p>Gaming</p>
-                    </div>
-
-                    <div class="about--hobbies--cards-card">
-                        <p>Old-Timers</p>
-                    </div>
-
-                    <div class="about--hobbies--cards-card">
-                        <p>Netflix</p>
-                    </div>
-
-                    <div class="about--hobbies--cards-card">
-                        <p>Traveling</p>
-                    </div>
-
-                    <div class="about--hobbies--cards-card">
-                        <p>Learning technologies</p>
-                    </div>
-                </div>
-            </section>
-
-             <section class="passion wrapper">
-                <p class="underlined"></p>
-                <h2 class="subtitle" >Besides Developing websites.., This is my other passion!</h2>
-                <p class="subtext">1965 Ford Thunderbird with a 6.4L v8</p>
-                <figure class="rounded">
-                    <img src="./assets/img/t-bird.jpg" alt="">
-                </figure>
-            </section>
-    </section> 
-    
-        <section class="work snap">
-
-            <section class="wrapper">
-                <h2 class="subtitle">My <span class="text-orange">work</span></h2>
-            </section>
-
-            <section class="wrapper work--cards">
-                {% for project in projects %}
-                    {% if project.preview === true %}
-                            <a target="blank_"href={{ project.link }}>
-                        <article>
-                                <figure>
-                                    <img src={{ project.logo }}>
-                                </figure>
-                                <p>{{project.name}}</p>
-                        </article>
-                            </a>
-                    {% endif %}
-                {% endfor %}
-            </section>
-
-                        <section class="wrapper work--cards">
-                {% for project in projects %}
-                    {% if project.preview !== true %}
-                            <a target="_blank"href={{ project.link }}>
-                        <article>
-                                <figure>
-                                    <img src={{ project.logo }}>
-                                </figure>
-                                <p>{{project.name}}</p>
-                        </article>
-                            </a>
-                    {% endif %}
-                {% endfor %}
-            </section>
-
-            
-    </section>
-    
-
-    <section class="skills snap">
-
-        <section class="wrapper skills--title">
-            <h3 class="subtitle">I strive for beautiful websites for clients who need a little help to create something truly <span     class="text-orange">special</span>.</h3>
-            <h3 class="subtitle">I do it with love for clients all around the world and i can do it for you too!</h3>
-        </section>
-
-            <section class="wrapper skills--services">
-                {# <h2 class="subtitle">what services can i currently provide?</h2> #}
-                <div class="skills--services--list wrapper">
-                {% for service in services %}
-                    <div>
-                        <img src={{ service.logo }}>
-                        <p>{{ service.desc }}</p>
-                    </div>
-                {% endfor %}
-                </div> 
-            </section> 
-
-            <section class="skills--skills">
-                <h2 class="subtitle wrapper">Some of the technologies i know or am learning</h2>
-                <div class="skills--list wrapper">
-                {% for skill in skills %}
-                    <div>
-                        <img src={{ skill.logo }}>
-                        <p>{{ skill.skill }}</p>
-                    </div>
-                {% endfor %}
-                </div>
-            </section>
-    </section>
-
-    <section class="contact snap">
-        <div class="contact--container">  
-            <form>
-                <h2 class="subtitle">Contact me,</h2>
-                <p>I would love to help you bring your ideas to reality! just fill in this quick form.</p>
-                <fieldset>
-                    <input placeholder="Your name*" type="text" tabindex="1" required>
-                </fieldset>
-
-                <fieldset>
-                    <input placeholder="Your Email Address*" type="email" tabindex="2" required>
-                </fieldset>
-
-                <fieldset>
-                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-                </fieldset>
-
-                <fieldset>
-                    <textarea placeholder="Type your message here....*" tabindex="5" required></textarea>
-                </fieldset>
-
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
-
-            </form>
-            </div>
-                </section>
-                <footer class="snap">
-                    {% include "_components/footer.njk" %}
-                </footer>
-            </div>
+        <div class="wrapper">  
+<div class="container">
+    <div class="spacing hero">
+        <div class="hero--content">
+            <h1>I define<span class="text-themeRed">,</span> design and deliver <br/> <span class="underlined">Nick Roofthooft</span></h1>
+            <p class="btn"><a href="work/index.html">Work</a></p>
+        </div>
     </div>
-<a href="#top" class="btn-to-top">
-<p>Top</p>
-</a>
+</div>
+
+<div class="experiences container spacing">
+    <div class="experiences--cards">
+    {% for item in experiences %}
+        <div class="experiences--cards--content">
+            <h2 class="text-red">{{ item.number }}</h2>
+            <h3>{{ item.title }}</h2>
+            <p>{{ item.desc }}</p>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+        </div>
+<div class="article text-black spacing">
+    <section class="article--section digital container spacing">
+        <div class="article--image">
+        <img src="assets/img/foto_me.jpg">
+        </div>
+        <div class="article--content">
+        <h2>I create digital products that last and are user-friendly</h2>
+        <div class="titleUnderlined"></div>
+        <p>As a young and developer i am always looking for the best and efficient way to create digital products, yet always deliver intriguing and good-looking products.</p>
+        <h3><a class="noLink" href="work/index.html">More about me </a><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</h3>
+        </div>
+    </section>
+</div>
+
+<div class="sectionDevider">
+<p class="sectionDevider--line"></p>
+</div>
+
+<div class="portfolio">
+<section class="portfolio--content container spacing" >
+<h2>Cases</h2>
+<div class="titleUnderlined"></div>
+    <section class="portfolio--content--cases spacing">
+    {% for item in cases %}
+        {% if (loop.index <= 3) %}
+        <a href="work/index.html#{{ item.number }}">
+            <img src="{{ root }}{{ item.logo }}">
+        </a>
+        {% endif %}
+    {% endfor %}
+    </section>
+<h3 class="spacing"><a class="noLink" href="work/index.html">See more</a><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	    viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</h3>
+</section>
+</div>
+
+<div class="sectionDevider">
+<p class="sectionDevider--line"></p>
+</div>
+
+<div class="sectionDevider">
+<p class="sectionDevider--line"></p>
+</div>
+
+{# <div class="skills">
+    <section class="container spacing">
+        <h2>We are proud to work with these Technologies & Tools</h2>
+        <div class="titleUnderlined"></div>
+        <section class="skills--skills">
+            <div class="skills--list wrapper">
+                {% for skill in skills %}
+                    {% if skill.favourite === true %}         
+                        <div>
+                            <img src={{ skill.logo }}>
+                            <p>{{ skill.skill }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+    </section>
+</div> #}
+
+<div class="skills">
+    <section class="container spacing" >
+    <h2>I am proud to work with these tools & languages</h2>
+    <div class="titleUnderlined"></div>
+    <section class="skills--skills">
+        <div class="skills--list">
+        {% for skill in skills %}
+            {% if skill.favourite === true %}         
+                <div>
+                    <img src={{ skill.logo }}>
+                    <p>{{ skill.skill }}</p>
+                </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <h3><a class="noLink" href="services/index.html#skills">More languages & tools i use</a><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</h3>
+    </section>
+    
+    </section>
+</div>
+
+<div class="sectionDevider">
+<p class="sectionDevider--line"></p>
+</div>
+
+
+<div class="subscribe spacing">
+    <div class="subscribe--container container spacing">
+        <section class="subscribe--content">
+            <h2>Find me here.</h2>
+            <div class="titleUnderlined"></div>
+            <div>
+
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100008351383023" target="_blank">
+                        <figure>
+                            <img src="assets/img/icons/facebook.svg">
+                        </figure>
+                    </a>    
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/itsnickkjj/" target="_blank">
+                        <figure>
+                            <img src="assets/img/icons/instagram.svg">
+                        </figure>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://twitter.com/?lang=nl" target="_blank">
+                        <figure>
+                            <img src="assets/img/icons/twitter.svg">
+                        </figure>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/Meastrix001" target="_blank">
+                        <figure>
+                            <img src="assets/img/icons/github.svg">
+                        </figure>
+                    </a>    
+                </div>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/nick-roofthoof-10b1a91a2/" target="_blank">
+                        <figure>
+                            <img src="assets/img/icons/linkedIn.svg">
+                        </figure>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://stackoverflow.com/users/15215573/meastrix001" target="_blank">
+                        <figure>
+                            <img src="assets/img/icons/stack-overflow.svg">
+                        </figure>
+                    </a>
+                </div>
+
+                </div>
+            </section>
+        </section>
+        <section class="subscribe--content--card">
+        <img src="assets/img/contact_me.jpg">
+        </section>
+    </div>
+</div>
+

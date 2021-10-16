@@ -1,36 +1,46 @@
-header{
-  position: absolute;
-  z-index: 3;
-  width: 100%;
+.header{
   .nav{
-    ul{
-      max-width: 2000px;
-      margin: auto;
+    width: fit-content;
+a{
+  color:white;
+}
+  }
+  div{
+    div{
       display: flex;
-      position: relative;
-      // justify-content: center;
-      align-content: flex-end;
-      align-items: flex-end;
-      justify-content: flex-end;
-      padding: 1rem 1rem;
-      li{
-        padding: 0 1rem;
-        list-style: none;
-        &.active{
-          transition: 0.125s ease;  
-            border-bottom: 4px solid $text-orange;
-        }
-        a{
-          text-decoration: none;
-          color: $text-orange;
-          transition: 0.125s ease all;
-          &:hover{
-            opacity: 50%;
-            border-bottom: 4px solid $text-orange;
-          }
-        }
-      }
+      justify-content: space-between;
+      align-items: center;
+      margin-right: -18px;
+      margin-left: -18px;
     }
   }
-
+  h1, h2, h3, h4, p{
+    color: white;
+  }
+  height: 20vh;
+  
+  z-index: 2;
+  &--light{
+    .menu-btn{
+      fill:black;
+  }
+    .nav{
+      width: fit-content;
+    a{
+      color:white;
+    }
+    .menu-btn-exit{
+      fill: white;
+    }
+    h1, h2, h3, h4, p{
+      color: black;
+    }
+    
+    @media (min-width:800px) {
+        a{
+        color: black
+      }
+    }
+}
+}
 }

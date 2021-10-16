@@ -1,0 +1,14 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.base{
+    &--light{
+        background-color: white
+    }
+    &--dark{
+        background-color: $Zwart;
+    }
+}

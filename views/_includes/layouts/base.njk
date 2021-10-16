@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow" />
+        {% include "components/seo.njk" %}
+        {% include "components/icons.njk" %} 
+        <link type="text/plain" rel="author" href="{{ '/humans.txt' | url }}" />       
+        <link rel="stylesheet" href="{{ root }}{{ 'assets/main.css' | url }}">
+    </head>
+    <body class="base--dark"> 
+        {# <div class="wrapper">    #}
+        {% include "components/header.njk" %}
+        <main class="main">
+            <img class="header--background" src="{{ root }}assets/img/header_background.jpg">
+
+            {{ content | safe }}
+        </main>
+        {# </div> #}
+        {% include "components/footer.njk" %}
+        <script src="{{ '{{root}}assets/js/main.js' | url }}"></script>
+    </body>
+</html>

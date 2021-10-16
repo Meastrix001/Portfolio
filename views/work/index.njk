@@ -1,0 +1,39 @@
+---
+root: ../
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Work
+  order: 3
+title: Work
+---
+<img class="header--background" src="assets/img/images/header_background.jpg">
+
+<section class="work container">
+    <article class="work--menu">
+    <h1>My work</h1>
+    <section>
+      <div class="titleUnderlined"></div>
+      <ul>
+        {% for item in cases %}
+          <li><a href="#{{item.number}}">{{item.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </article>
+  <section class="work--cards spacing">
+    {% for item in cases %}
+      <article id="{{item.number}}" class="work--cards--card spacing">
+          <a target="_blank"href="{{item.link}}">
+              <img src="{{root}}{{ item.logo }}">
+              <p>Click to Preview</p>
+          </a>
+          <div>
+            <h2>{{item.name}}</h2>
+            <p class="text-gray">{{item.desc}}</p>
+            <h4><a href="{{item.github}}">Github repo</a></h4>
+          </div>
+      </article>
+    {% endfor %}
+
+  </section>
+</section>

@@ -1,0 +1,41 @@
+.footer-nav {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            font-family: $font-family-Roboto;
+            font-size: 18px;
+            font-weight: 500;
+
+            > a {
+                position: relative;
+                display: block;
+                color: $gray-100;
+               
+                padding: calc(var(--nav-spacing)/4) var(--nav-spacing);
+
+                text-decoration: none; 
+                transition: 0.125s ease;
+                &:hover {
+                    color: $Rood;
+                    text-decoration: 2px underline $Rood;
+                    transition: 0.125s ease;
+                }
+            }
+
+            &--active {
+                > a {
+                    color: $Rood !important;
+                    text-decoration: 2px underline $Rood;
+                }
+            }
+        }
+    }
+}

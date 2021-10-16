@@ -1,0 +1,66 @@
+.team{
+  height: 80vh;
+
+  h1, h2, h3, h4, p, a {
+    color: black;
+  }
+  
+  &--qoute{
+    background-color: white;
+    text-align: center;
+    h2{
+      color: black;
+    }
+    span{
+      font-size: 7rem;
+    }
+  }
+  &--video{
+    background-color: white;
+    div{
+      margin: auto;
+      width: 80vw;
+      iframe{
+      width: 100%;
+      height:20vw;  
+      }
+    }
+  }
+  &--work{
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: white;
+  &--card{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    h2, p{
+      color: black;
+      text-align: left;
+    }
+      &--color{
+        h2, p{
+          margin: 0;
+          margin-block-end: 0;
+          margin-block-start: 0;
+          color: white;
+          text-align: center;
+          }
+      &:nth-child(1){
+        background-color: red;
+        padding: 5rem 0 2rem 0;
+      }
+      &:nth-child(2){
+        background-color: black;
+        padding: 5rem 0 2rem 0;
+      }
+    }
+    &--content{
+      margin: auto auto;
+      p{
+      }
+    }
+  }
+  }
+}

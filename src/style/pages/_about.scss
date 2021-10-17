@@ -4,11 +4,18 @@
     color: black;
   }
   
+  .article--section{
+
+    .article--content{
+      h2, p{
+        color: white;
+      }
+    }
+  }
   &--qoute{
-    background-color: white;
     text-align: center;
     h2{
-      color: black;
+      color: white;
     }
     span{
       font-size: 7rem;

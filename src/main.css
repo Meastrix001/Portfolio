@@ -2157,9 +2157,6 @@ html {
   color: white;
 }
 
-.article {
-  background-color: white;
-}
 @media (min-width: 875px) {
   .article--section {
     display: flex;
@@ -2745,12 +2742,14 @@ html {
 .team h1, .team h2, .team h3, .team h4, .team p, .team a {
   color: black;
 }
+.team .article--section .article--content h2, .team .article--section .article--content p {
+  color: white;
+}
 .team--qoute {
-  background-color: white;
   text-align: center;
 }
 .team--qoute h2 {
-  color: black;
+  color: white;
 }
 .team--qoute span {
   font-size: 7rem;

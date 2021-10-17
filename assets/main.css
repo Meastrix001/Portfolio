@@ -2149,7 +2149,6 @@ html {
 }
 .experiences--cards--content:hover {
   background-color: #F24C4C;
-  cursor: pointer;
   transition: 0.2s ease;
 }
 .experiences--cards--content:hover h2 {
@@ -2287,9 +2286,6 @@ html {
 .skills--skills h3 {
   color: black;
   text-align: right;
-}
-.skills--skills h3:hover {
-  cursor: pointer;
 }
 .skills--skills h3:hover svg {
   transform: translateX(7px);

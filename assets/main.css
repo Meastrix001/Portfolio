@@ -2313,7 +2313,6 @@ html {
   align-items: center;
 }
 .skills--list div:hover {
-  cursor: pointer;
   transform: scale(1.2);
 }
 .skills--list div img {

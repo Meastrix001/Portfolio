@@ -44,7 +44,7 @@ module.exports = function (eleventyConfig) {
       includes: "includes",
       data: "data",
     },
-    pathPrefix: "/11tyio-boilerplate",
+    pathPrefix: "/Portfolio",
     templateFormats: ["html", "liquid", "md", "njk"],
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",

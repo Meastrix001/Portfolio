@@ -7,10 +7,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
 
-  eleventyConfig.addPassthroughCopy({ 'site/_static/css': 'static/css' });
-  eleventyConfig.addPassthroughCopy({ 'site/_static/images': 'static/images' });
-  eleventyConfig.addPassthroughCopy({ 'site/_static/js': 'static/js' });
-  eleventyConfig.addPassthroughCopy({ 'site/humans.txt': 'humans.txt' });
+  eleventyConfig.addPassthroughCopy({
+    'src/main.css': 'assets/main.css',
+    'src/images': 'assets/img',
+    'src/js': 'assets/js',
+});
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
@@ -19,9 +20,6 @@ module.exports = function (eleventyConfig) {
         const content_404 = fs.readFileSync('docs/404.html');
 
         browserSync.addMiddleware("*", (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
         });
       }
     }

@@ -49,7 +49,6 @@ margin-top: 1rem;
         }
         &:hover{
           background-color: $Rood;
-          cursor: pointer;
           transition: 0.2s ease;
           h2{
           transition: 0.2s ease; 
@@ -196,7 +195,6 @@ margin-top: 1rem;
       color: black;
       text-align: right;
       &:hover {
-          cursor: pointer;
           svg {
               transform: translateX(7px);
               transition: 0.3s ease;

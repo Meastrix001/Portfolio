@@ -2,7 +2,7 @@
     background-color: $LichtZwart;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: -350px;
     left: 0;
     opacity: 0;
     transition: 0.125s ease;
@@ -11,7 +11,7 @@
     &.open{
     transition: 0.125s ease;
     opacity: 100;
-
+    top: 0;
         visibility: visible;
     }
 
@@ -58,8 +58,11 @@
         }
     }
 
-
+    opacity: 100;
     @media (min-width: 775px) {
+        opacity: 100;
+       top: 0;
+
         a{
             font-size: 1.2rem;
         }

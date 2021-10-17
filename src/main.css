@@ -1634,16 +1634,18 @@ mark,
   background-color: #272727;
   position: absolute;
   width: 100%;
-  top: 0;
+  top: -350px;
   left: 0;
   opacity: 0;
   transition: 0.125s ease;
   visibility: hidden;
   --nav-spacing: 18px;
+  opacity: 100;
 }
 .nav.open {
   transition: 0.125s ease;
   opacity: 100;
+  top: 0;
   visibility: visible;
 }
 .nav__list {
@@ -1682,6 +1684,8 @@ mark,
 }
 @media (min-width: 775px) {
   .nav {
+    opacity: 100;
+    top: 0;
     background-color: unset;
     position: relative;
     width: unset;

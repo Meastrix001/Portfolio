@@ -4,8 +4,14 @@
     width: 100%;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: 0.125s ease;
     visibility: hidden;
+
     &.open{
+    transition: 0.125s ease;
+    opacity: 100;
+
         visibility: visible;
     }
 

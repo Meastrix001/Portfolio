@@ -1,6 +1,5 @@
 .team{
-  height: 80vh;
-
+  max-height: fit-content;
   h1, h2, h3, h4, p, a {
     color: black;
   }
@@ -23,6 +22,7 @@
 
         margin: auto;
         width: fit-content;
+        max-width: 100%;
         source{
         }
       }

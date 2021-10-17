@@ -35,17 +35,11 @@
     },
 
     getAge() {
-
-      var userDateinput = "09/11/2000";  
-        // convert user input value into date object
-      var birthDate = new Date(userDateinput);
-       console.log(userDateinput);
-      
-      // get difference from current date;
-      var difference=Date.now() - birthDate.getTime(); 
-         
+      var bd = "09/11/2000";  
+      var birthDate = new Date(bd);
+      var difference = Date.now() - birthDate.getTime(); 
       var  ageDate = new Date(difference); 
-      var calculatedAge=   Math.abs(ageDate.getUTCFullYear() - 1970);
+      var calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
       return this.age.innerHTML = calculatedAge
     }
   };

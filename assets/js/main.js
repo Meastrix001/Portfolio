@@ -3,7 +3,6 @@
     initialize () {
       this.cacheElements();
       this.registerEventListeners();
-      this.getAge();
     },
     cacheElements () {
       this.btnToTopElement = document.querySelector('.btn-to-top');
@@ -11,6 +10,9 @@
       this.nav = document.querySelector('.nav');
       this.navExit = document.querySelector('.menu-btn-exit');
       this.age = document.getElementById('age')
+      if(this.age) {
+        this.getAge();
+      }
     },
     registerEventListeners () {
       if (this.btnToTopElement !== null) {

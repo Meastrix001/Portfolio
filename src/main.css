@@ -2027,7 +2027,6 @@ p {
 .side-line img {
   max-height: 70vh;
   max-width: 100%;
-  padding-left: 0.5rem;
   background-color: white;
   box-shadow: -1rem 0rem #F24C4C;
 }
@@ -2155,7 +2154,7 @@ html {
 }
 @media (min-width: 875px) {
   .article--image {
-    max-width: 40%;
+    max-width: 45%;
   }
 }
 .article--image--mirror {
@@ -2742,22 +2741,66 @@ html {
   background-color: white;
 }
 .team--video div {
-  margin: auto;
-  width: 80vw;
-}
-.team--video div iframe {
-  width: 100%;
-  height: 20vw;
-}
-.team--work {
   display: flex;
-  justify-content: space-evenly;
-  background-color: white;
+}
+.team--video div video {
+  margin: auto;
+  width: fit-content;
+}
+@media (min-width: 875px) {
+  .team--work {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+  }
 }
 .team--work--card {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
+}
+@media (min-width: 875px) {
+  .team--work--card {
+    width: 45%;
+  }
+}
+.team--work--card:nth-of-type(2) section {
+  margin-top: 2rem;
+}
+@media (min-width: 875px) {
+  .team--work--card:nth-of-type(2) section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0rem;
+  }
+  .team--work--card:nth-of-type(2) section h3, .team--work--card:nth-of-type(2) section P {
+    width: 50%;
+  }
+}
+.team--work--card:nth-of-type(2) section P {
+  width: 100%;
+}
+.team--work--card:nth-of-type(2) section h3 {
+  color: black;
+  width: 100%;
+  text-align: right;
+}
+.team--work--card:nth-of-type(2) section h3:hover {
+  cursor: pointer;
+}
+.team--work--card:nth-of-type(2) section h3:hover svg {
+  transform: translateX(7px);
+  transition: 0.3s ease;
+}
+.team--work--card:nth-of-type(2) section h3 svg {
+  fill: #F24C4C;
+  width: 1.5rem;
+  transition: 0.3s ease;
+}
+.team--work--card img {
+  max-width: 100%;
 }
 .team--work--card h2, .team--work--card p {
   color: black;

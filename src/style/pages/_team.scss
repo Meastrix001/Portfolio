@@ -18,23 +18,68 @@
   &--video{
     background-color: white;
     div{
-      margin: auto;
-      width: 80vw;
-      iframe{
-      width: 100%;
-      height:20vw;  
+      display: flex;
+      video{
+
+        margin: auto;
+        width: fit-content;
+        source{
+        }
       }
     }
   }
   &--work{
-    display: flex;
-    justify-content: space-evenly;
-
-    background-color: white;
+    @media (min-width:875px) {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: white;
+      
+    }
   &--card{
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
+    @media (min-width:875px) {
+      width: 45%;
+    }
+    &:nth-of-type(2)section{
+      margin-top: 2rem;
+      @media (min-width:875px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0rem;
+        h3, P{
+          width: 50%;
+        }
+      }
+      P{
+        width: 100%;
+      }
+      h3 {
+        color: black;
+        width: 100%;
+        text-align: right;
+        &:hover {
+            cursor: pointer;
+
+            svg {
+                transform: translateX(7px);
+                transition: 0.3s ease;
+            }
+        }
+
+        svg {
+            fill: $Rood;
+            width: 1.5rem;
+            transition: 0.3s ease;
+        }
+    }
+    }
+    img{
+      max-width: 100%;
+    }
     h2, p{
       color: black;
       text-align: left;

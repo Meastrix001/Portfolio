@@ -19,7 +19,7 @@ html{
   }
 }
 .digital{
-  margin-top: 15rem;
+  padding-top: 6rem;
   @media (min-width:1000px) {
    margin-top: 2rem;
   }
@@ -72,19 +72,24 @@ margin-top: 1rem;
   background-color: white;
 
   &--image {
-      @media (min-width:875px) {
-          max-width: 40%;
-      }
-      &--mirror {
-          margin: 0 0 0 auto;
-          justify-content: flex-end;
-          display: flex;
-      }
-
-      img {
+    display: flex;
+    @media (min-width:875px) {
+      max-width: 40%;
+    }
+    &--mirror {
+      margin: 0 0 0 auto;
+      justify-content: flex-end;
+      display: flex;
+    }
+    
+    img {
+        margin: auto;
           max-height: 70vh;
-          // box-shadow: 1rem 1rem $Rood;
           max-width: 100%;
+          margin-bottom: 2rem;
+          @media (min-width:875px) {
+      
+          }
       }
   }
 
@@ -279,7 +284,13 @@ margin-top: 1rem;
   }
   &--content{
     margin: auto;
-    max-width: 50%;
+    max-width: 100%;
+    margin-top: 2rem;
+    @media (min-width:875px) {
+      max-width: 50%;
+    margin-top: 0;
+      
+     }
     h2{
       color: black;
     }
@@ -294,7 +305,11 @@ margin-top: 1rem;
     }
     &--card{
       height: 20rem;
+      width: unset;
+      @media (min-width:875px) {
       width: fit-content;
+        
+       }
       img{
           width: 100%;
           max-height: 100%;

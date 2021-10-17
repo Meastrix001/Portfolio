@@ -1,5 +1,5 @@
 .nav {
-    background-color: black;
+    background-color: $LichtZwart;
     position: absolute;
     width: 100%;
     top: 0;
@@ -67,6 +67,7 @@
         width: unset;
         visibility: visible;
         ul{
+            padding: 3rem 0;
             li{
 
             }

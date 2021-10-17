@@ -12,13 +12,13 @@
     <body class="base--dark"> 
         {# <div class="wrapper">    #}
         {% include "components/header.njk" %}
-        <main class="main">
+        <main class="main main--{{color}}">
             <img class="header--background" src="{{ root }}assets/img/header_background.jpg">
 
             {{ content | safe }}
         </main>
         {# </div> #}
         {% include "components/footer.njk" %}
-        <script src="{{ '{{root}}assets/js/main.js' | url }}"></script>
+        <script src="{{root}}{{ 'assets/js/main.js' | url }}"></script>
     </body>
 </html>

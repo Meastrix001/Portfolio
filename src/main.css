@@ -2736,110 +2736,110 @@ html {
   color: #a7a7a7;
 }
 
-.team {
+.about {
   max-height: fit-content;
 }
-.team h1, .team h2, .team h3, .team h4, .team p, .team a {
+.about h1, .about h2, .about h3, .about h4, .about p, .about a {
   color: black;
 }
-.team .article--section .article--content h2, .team .article--section .article--content p {
+.about .article--section .article--content h2, .about .article--section .article--content p {
   color: white;
 }
-.team--qoute {
+.about--qoute {
   text-align: center;
 }
-.team--qoute h2 {
-  color: white;
+.about--qoute h2 {
+  color: black;
 }
-.team--qoute span {
+.about--qoute span {
   font-size: 7rem;
 }
-.team--video {
+.about--video {
   background-color: white;
 }
-.team--video div {
+.about--video div {
   display: flex;
 }
-.team--video div video {
+.about--video div video {
   margin: auto;
   width: fit-content;
   max-width: 100%;
 }
 @media (min-width: 875px) {
-  .team--work {
+  .about--work {
     display: flex;
     justify-content: space-evenly;
     background-color: white;
   }
 }
-.team--work--card {
+.about--work--card {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
 }
 @media (min-width: 875px) {
-  .team--work--card {
+  .about--work--card {
     width: 45%;
   }
 }
-.team--work--card:nth-of-type(2) section {
+.about--work--card:nth-of-type(2) section {
   margin-top: 2rem;
 }
 @media (min-width: 875px) {
-  .team--work--card:nth-of-type(2) section {
+  .about--work--card:nth-of-type(2) section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0rem;
   }
-  .team--work--card:nth-of-type(2) section h3, .team--work--card:nth-of-type(2) section P {
+  .about--work--card:nth-of-type(2) section h3, .about--work--card:nth-of-type(2) section P {
     width: 50%;
   }
 }
-.team--work--card:nth-of-type(2) section P {
+.about--work--card:nth-of-type(2) section P {
   width: 100%;
 }
-.team--work--card:nth-of-type(2) section h3 {
+.about--work--card:nth-of-type(2) section h3 {
   color: black;
   width: 100%;
   text-align: right;
 }
-.team--work--card:nth-of-type(2) section h3:hover {
+.about--work--card:nth-of-type(2) section h3:hover {
   cursor: pointer;
 }
-.team--work--card:nth-of-type(2) section h3:hover svg {
+.about--work--card:nth-of-type(2) section h3:hover svg {
   transform: translateX(7px);
   transition: 0.3s ease;
 }
-.team--work--card:nth-of-type(2) section h3 svg {
+.about--work--card:nth-of-type(2) section h3 svg {
   fill: #F24C4C;
   width: 1.5rem;
   transition: 0.3s ease;
 }
-.team--work--card img {
+.about--work--card img {
   max-width: 100%;
 }
-.team--work--card h2, .team--work--card p {
+.about--work--card h2, .about--work--card p {
   color: black;
   text-align: left;
 }
-.team--work--card--color h2, .team--work--card--color p {
+.about--work--card--color h2, .about--work--card--color p {
   margin: 0;
   margin-block-end: 0;
   margin-block-start: 0;
   color: white;
   text-align: center;
 }
-.team--work--card--color:nth-child(1) {
+.about--work--card--color:nth-child(1) {
   background-color: red;
   padding: 5rem 0 2rem 0;
 }
-.team--work--card--color:nth-child(2) {
+.about--work--card--color:nth-child(2) {
   background-color: black;
   padding: 5rem 0 2rem 0;
 }
-.team--work--card--content {
+.about--work--card--content {
   margin: auto auto;
 }
 .contact {

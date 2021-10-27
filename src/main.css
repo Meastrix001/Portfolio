@@ -2054,6 +2054,7 @@ p {
   background: #161616;
   color: #f8f9fa;
   padding: 2rem 0 1rem 0;
+  z-index: 1;
 }
 .footer .copyright {
   text-align: center;
@@ -2149,7 +2150,6 @@ html {
 }
 .experiences--cards--content:hover {
   background-color: #F24C4C;
-  cursor: pointer;
   transition: 0.2s ease;
 }
 .experiences--cards--content:hover h2 {
@@ -2288,9 +2288,6 @@ html {
   color: black;
   text-align: right;
 }
-.skills--skills h3:hover {
-  cursor: pointer;
-}
 .skills--skills h3:hover svg {
   transform: translateX(7px);
   transition: 0.3s ease;
@@ -2317,7 +2314,6 @@ html {
   align-items: center;
 }
 .skills--list div:hover {
-  cursor: pointer;
   transform: scale(1.2);
 }
 .skills--list div img {
@@ -2738,6 +2734,7 @@ html {
 
 .about {
   max-height: fit-content;
+  min-height: 80vh;
 }
 .about h1, .about h2, .about h3, .about h4, .about p, .about a {
   color: black;

@@ -6,22 +6,10 @@
     "favourite": true
   },
   {
-    "skill": "TypeScript",
-    "logo": "assets/img/logos/typescript.png",
-    "learning": 1,
-    "favourite": false
-  },
-  {
     "skill": "React",
     "logo": "assets/img/logos/react.png",
     "learning": 0,
     "favourite": true
-  },
-  {
-    "skill": "Php",
-    "logo": "assets/img/logos/php.png",
-    "learning": 1,
-    "favourite": false
   },
   {
     "skill": "HTML",
@@ -34,12 +22,6 @@
     "logo": "assets/img/logos/css.png",
     "learning": 0,
     "favourite": true
-  },
-  {
-    "skill": "GraphQL",
-    "logo": "assets/img/logos/Graphql.png",
-    "learning": 1,
-    "favourite": false
   },
   {
     "skill": "GitHub",
@@ -58,6 +40,66 @@
     "logo": "assets/img/logos/11ty.svg",
     "learning": 0,
     "favourite": true
+  },
+  {
+    "skill": "Firebase",
+    "logo": "assets/img/logos/firebase.png",
+    "learning": 0,
+    "favourite": true
+  },
+  {
+    "skill": "Tailwind",
+    "logo": "assets/img/logos/tailwind.png",
+    "learning": 0,
+    "favourite": true
+  },
+  {
+    "skill": "NunJucks",
+    "logo": "assets/img/logos/nunjucks.jpg",
+    "learning": 0,
+    "favourite": true
+  },
+  {
+    "skill": "NodeJS",
+    "logo": "assets/img/logos/nodejs.png",
+    "learning": 0,
+    "favourite": true
+  },
+  {
+    "skill": "Adobe XD",
+    "logo": "assets/img/logos/adobexd.png",
+    "learning": 0,
+    "favourite": true
+  },
+  {
+    "skill": "Php",
+    "logo": "assets/img/logos/php.png",
+    "learning": 1,
+    "favourite": false
+  },
+  {
+    "skill": "TypeScript",
+    "logo": "assets/img/logos/typescript.png",
+    "learning": 1,
+    "favourite": false
+  },
+  {
+    "skill": "GraphQL",
+    "logo": "assets/img/logos/Graphql.png",
+    "learning": 1,
+    "favourite": false
+  },
+  {
+    "skill": "MySQL",
+    "logo": "assets/img/logos/mysql.png",
+    "learning": 1,
+    "favourite": false
+  },
+  {
+    "skill": "NestJS",
+    "logo": "assets/img/logos/nestjs.png",
+    "learning": 1,
+    "favourite": false
   },
   {
     "skill": "Blender",

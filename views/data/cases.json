@@ -79,5 +79,14 @@
     "link": "https://pgmgent-2021-uip.github.io/My-walking-app/",
     "desc": "A walking app made with eleventy and nunJucks, this was my first assignment with eleventy, sass and nunjucks",
     "github": "https://github.com/pgmgent-2021-uip/My-walking-app"
+  },
+  {
+    "number": "10",
+    "linkTo": "Go to Repository.",
+    "logo": "assets/img/logos/socialapp.jpg",
+    "name": "A social app made in PHP",
+    "link": "https://pgmgent-2021-uip.github.io/My-walking-app/",
+    "desc": "A social app made with php and MySql databases, this was my first real website with php, including user management, posts, comments, like, friends/followers",
+    "github": "https://github.com/pgmgent-2021-uip/My-walking-app"
   }
 ]

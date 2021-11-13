@@ -2148,14 +2148,6 @@ html {
     max-width: 30%;
   }
 }
-.experiences--cards--content:hover {
-  background-color: #F24C4C;
-  transition: 0.2s ease;
-}
-.experiences--cards--content:hover h2 {
-  transition: 0.2s ease;
-  color: white;
-}
 
 @media (min-width: 875px) {
   .article--section {
@@ -2238,6 +2230,9 @@ html {
   flex-direction: column;
   margin: auto;
   width: fit-content;
+}
+.portfolio--content--cases .work_title {
+  padding-left: 1rem;
 }
 .portfolio--content--cases a {
   box-sizing: border-box;

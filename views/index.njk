@@ -98,9 +98,10 @@ description: Get great at designing amazing websites and mobile applications wit
 <div class="titleUnderlined"></div>
     <section class="portfolio--content--cases spacing">
     {% for item in cases %}
-        {% if (loop.index <= 3) %}
+        {% if (loop.index === 7) or (loop.index === 8) or (loop.index === 9) %}
         <a href="work/index.html#{{ item.number }}">
             <img src="{{ root }}{{ item.logo }}">
+            <p class="text-black work_title">{{ item.name }}</p>
         </a>
         {% endif %}
     {% endfor %}

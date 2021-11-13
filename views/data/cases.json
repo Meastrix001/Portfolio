@@ -101,7 +101,7 @@
   {
     "number": "110",
     "linkTo": "Go to Repository.",
-    "logo": "assets/img/logos/socialapp.jpg",
+    "logo": "assets/img/logos/ISocial.png",
     "name": "A WIP social app made in PHP",
     "link": "https://github.com/Meastrix001/PHPSocials",
     "desc": "A social app made with php and MySql databases, this was my first real website with php, including user management, posts, comments, like, friends/followers",

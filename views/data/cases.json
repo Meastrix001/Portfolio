@@ -1,7 +1,7 @@
 [
   {
     "number": "1",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/futureisland.png",
     "name": "Future Island",
     "link": "https://pgmgent-2021-pgm-1.github.io/futureisland-Meastrix001/docs/index.html",
@@ -10,7 +10,7 @@
   },
   {
     "number": "10",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/ailiv.jpg",
     "name": "Ailiv",
     "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_1-Meastrix001/index.html",
@@ -19,7 +19,7 @@
   },
   {
     "number": "20",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/SheCodeAfrika.gif",
     "name": "She Code Afrika",
     "link": "https://meastrix001.github.io/She-Code-Afrika/index.html",
@@ -28,7 +28,7 @@
   },
   {
     "number": "30",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/DA.png",
     "name": "A Digital Agency",
     "link": "https://the8gency.github.io/digital-agency-orion/",
@@ -37,7 +37,7 @@
   },
   {
     "number": "40",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/logo.jfif",
     "name": "A light Digital Agency",
     "link": "https://meastrix001.github.io/A-Light-Digital-Agency/index.html",
@@ -46,7 +46,7 @@
   },
   {
     "number": "50",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/walkingapp.png",
     "name": "My walking app",
     "link": "https://pgmgent-2021-uip.github.io/My-walking-app/",
@@ -55,7 +55,7 @@
   },
   {
     "number": "60",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/profielfoto.png",
     "name": "Gentse Feesten",
     "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_2-Meastrix001/",
@@ -64,7 +64,7 @@
   },
   {
     "number": "70",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/AQ.png",
     "name": "Arne Quinze",
     "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_3-Meastrix001/",
@@ -73,7 +73,7 @@
   },
   {
     "number": "80",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/github.jpg",
     "name": "Github User Database",
     "link": "https://pgmpgent-2021-pgm-2.github.io/pgm-2_project_1-Meastrix001/",
@@ -82,7 +82,7 @@
   },
   {
     "number": "90",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/mailchimp.png",
     "name": "A mailchimp survey result",
     "link": "https://meastrix001.github.io/IT-Buss-Mailchimp/",
@@ -91,7 +91,7 @@
   },
   {
     "number": "100",
-    "linkTo": "Click to Preview",
+    "linkTo": "Click to Preview!",
     "logo": "assets/img/logos/quiz.jpg",
     "name": "A Developer Quiz",
     "link": "https://pgmgent-pgm-3.github.io/opdracht-1---developer-quiz-Meastrix001/",
@@ -112,7 +112,18 @@
     "linkTo": "Go to Repository.",
     "logo": "assets/img/logos/wikimedia.png",
     "name": "Wikimedia",
+    "link": "https://meastrix001.github.io/WikiMedia/",
     "desc": "A movie app made in ReactJS, using the 'themoviedb' API, reusable components, search function, Firebase implementation, account management, pagination and more.",
     "github": "https://github.com/Meastrix001/WikiMedia"
+  },
+  {
+    "number": "130",
+    "linkTo": "Click to Preview.",
+    "logo": "assets/img/logos/diorama.png",
+    "name": "Diorama",
+    "link": "https://pgmgent-2122-im.github.io/diorama-Meastrix001/",
+
+    "desc": "A diorama made in blender and later converted to a website using reactJS + ThreeJs, WIP animations.",
+    "github": "https://github.com/pgmgent-2122-im/diorama-Meastrix001"
   }
 ]

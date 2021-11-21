@@ -2706,6 +2706,7 @@ html {
 .work--filter ul li {
   transition: 0.75s ease all;
   list-style: none;
+  margin-bottom: 1rem;
 }
 .work--filter ul li p {
   background-color: #F24C4C;

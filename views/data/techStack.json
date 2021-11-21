@@ -1,0 +1,46 @@
+[
+  {
+    "skill": "JavaScript",
+    "logo": "assets/img/logos/javascript.png"
+  },
+  {
+    "skill": "React",
+    "logo": "assets/img/logos/react.png"
+  },
+  {
+    "skill": "Php",
+    "logo": "assets/img/logos/php.png"
+  },
+  {
+    "skill": "HTML",
+    "logo": "assets/img/logos/html.png"
+  },
+  {
+    "skill": "CSS",
+    "logo": "assets/img/logos/css.png"
+  },
+  {
+    "skill": "Sass",
+    "logo": "assets/img/logos/sass.png"
+  },
+  {
+    "skill": "Eleventy",
+    "logo": "assets/img/logos/11ty.svg"
+  },
+  {
+    "skill": "Nunjucks",
+    "logo": "assets/img/logos/nunjucks.jpg"
+  },
+  {
+    "skill": "Firebase",
+    "logo": "assets/img/logos/firebase.png"
+  },
+  {
+    "skill": "MySQL",
+    "logo": "assets/img/logos/mysql.png"
+  },
+  {
+    "skill": "Blender",
+    "logo": "assets/img/logos/blender.png"
+  }
+]

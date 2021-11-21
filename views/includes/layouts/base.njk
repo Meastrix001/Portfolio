@@ -9,7 +9,7 @@
         <link type="text/plain" rel="author" href="{{ '/humans.txt' | url }}" />       
         <link rel="stylesheet" href="{{ root }}{{ 'assets/main.css' | url }}">
     </head>
-    <body class="base--dark"> 
+    <body class="base--dark" id="goToTop"> 
         {# <div class="wrapper">    #}
         {% include "components/header.njk" %}
         <main class="main main--{{color}}">
@@ -17,7 +17,7 @@
 
             {{ content | safe }}
         </main>
-        {# </div> #}
+          <button onclick="" id="toTop"><a href="#goToTop">Go to top</a></button>
         {% include "components/footer.njk" %}
         <script src="{{root}}{{ 'assets/js/main.js' | url }}"></script>
     </body>

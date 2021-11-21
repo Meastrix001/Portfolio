@@ -26,10 +26,11 @@
     background-color: white;
     div{
       display: flex;
-      video{
-
+      video, embed{
+        height:  34rem;
         margin: auto;
         width: fit-content;
+        width: 100%;
         max-width: 100%;
         source{
         }

@@ -6,7 +6,12 @@
     "name": "Future Island",
     "link": "https://pgmgent-2021-pgm-1.github.io/futureisland-Meastrix001/docs/index.html",
     "desc": "A replica of site from the festival Future Island/rockWerchter, This was an assignment early in my first year where we learned how to use click event and event-listeners in JavaScript",
-    "github": "https://github.com/pgmgent-2021-pgm-1/futureisland-Meastrix001"
+    "github": "https://github.com/pgmgent-2021-pgm-1/futureisland-Meastrix001",
+    "tags": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ]
   },
   {
     "number": "10",
@@ -15,7 +20,11 @@
     "name": "Ailiv",
     "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_1-Meastrix001/index.html",
     "desc": "A rebuild of the offical Ailiv website, making use of self-made JSON-files, visual shopping cart, and URL Parameters for detail pages. Made with JavaScript",
-    "github": "https://github.com/pgmgent-2021-pgm-1/futureisland-Meastrix001"
+    "github": "https://github.com/pgmgent-2021-pgm-1/futureisland-Meastrix001",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
   },
   {
     "number": "20",
@@ -23,8 +32,12 @@
     "logo": "assets/img/logos/SheCodeAfrika.gif",
     "name": "She Code Afrika",
     "link": "https://meastrix001.github.io/She-Code-Afrika/index.html",
-    "desc": "A alternative version of the She Code Afrika website using html and css",
-    "github": "https://github.com/Meastrix001/She-Code-Afrika"
+    "desc": "A alternative version of the She Code Afrika website using html and CSS",
+    "github": "https://github.com/Meastrix001/She-Code-Afrika",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
   },
   {
     "number": "30",
@@ -33,7 +46,13 @@
     "name": "A Digital Agency",
     "link": "https://the8gency.github.io/digital-agency-orion/",
     "desc": "A Digital agency website made using eleventy, sass, nunjucks, some JavaScript & learning to work together in 1 github repo with multiple people",
-    "github": "https://github.com/the8gency/digital-agency-orion"
+    "github": "https://github.com/the8gency/digital-agency-orion",
+    "tags": [
+      "JavaScript",
+      "Eleventy",
+      "Sass",
+      "Nunjucks"
+    ]
   },
   {
     "number": "40",
@@ -41,8 +60,14 @@
     "logo": "assets/img/logos/logo.jfif",
     "name": "A light Digital Agency",
     "link": "https://meastrix001.github.io/A-Light-Digital-Agency/index.html",
-    "desc": "A Lighter version of a Digital Agency website made using html & css",
-    "github": "https://github.com/Meastrix001/A-Light-Digital-Agency"
+    "desc": "A Lighter version of a Digital Agency website made using html & CSS",
+    "github": "https://github.com/Meastrix001/A-Light-Digital-Agency",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Nunjucks"
+    ]
   },
   {
     "number": "50",
@@ -51,7 +76,14 @@
     "name": "My walking app",
     "link": "https://pgmgent-2021-uip.github.io/My-walking-app/",
     "desc": "A walking app made with eleventy and nunJucks, this was my first assignment with eleventy, sass and nunjucks",
-    "github": "https://github.com/pgmgent-2021-uip/My-walking-app"
+    "github": "https://github.com/pgmgent-2021-uip/My-walking-app",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "Sass",
+      "Eleventy",
+      "Nunjucks"
+    ]
   },
   {
     "number": "60",
@@ -60,7 +92,13 @@
     "name": "Gentse Feesten",
     "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_2-Meastrix001/",
     "desc": "A rebuild of the official Gentse Feesten website, includes URL parameters for filtering, a lot of vanilla JavaScript",
-    "github": "https://github.com/pgmgent-2021-atwork1/atwork-1_project_2-Meastrix001"
+    "github": "https://github.com/pgmgent-2021-atwork1/atwork-1_project_2-Meastrix001",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "API"
+    ]
   },
   {
     "number": "70",
@@ -68,8 +106,13 @@
     "logo": "assets/img/logos/AQ.png",
     "name": "Arne Quinze",
     "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_3-Meastrix001/",
-    "desc": "A rebuild of the official Arne Quinze website, includes filtering and use of api's in JavaScript and special css methods",
-    "github": "https://github.com/pgmgent-2021-atwork1/atwork-1_project_3-Meastrix001"
+    "desc": "A rebuild of the official Arne Quinze website, includes filtering and use of api's in JavaScript and special CSS methods",
+    "github": "https://github.com/pgmgent-2021-atwork1/atwork-1_project_3-Meastrix001",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ]
   },
   {
     "number": "80",
@@ -78,7 +121,14 @@
     "name": "Github User Database",
     "link": "https://pgmpgent-2021-pgm-2.github.io/pgm-2_project_1-Meastrix001/",
     "desc": "A github userbase created with vanilla JavaScript, includes the github api to search for users, see their repective branches, repo's etc. also includes the youtube Api allowing you to search for youtube videos, see channels etc..",
-    "github": "https://github.com/pgmpgent-2021-pgm-2/pgm-2_project_1-Meastrix001/tree/master"
+    "github": "https://github.com/pgmpgent-2021-pgm-2/pgm-2_project_1-Meastrix001/tree/master",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Github API",
+      "Youtube API"
+    ]
   },
   {
     "number": "90",
@@ -86,8 +136,12 @@
     "logo": "assets/img/logos/mailchimp.png",
     "name": "A mailchimp survey result",
     "link": "https://meastrix001.github.io/IT-Buss-Mailchimp/",
-    "desc": "A mailchimp survey result for IT-Buss created with Eleventy , nunjucks and Scss",
-    "github": "https://github.com/Meastrix001/IT-Buss-Mailchimp"
+    "desc": "A mailchimp survey result for IT-Buss created with Eleventy , nunjucks and Sass",
+    "github": "https://github.com/Meastrix001/IT-Buss-Mailchimp",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
   },
   {
     "number": "100",
@@ -96,7 +150,12 @@
     "name": "A Developer Quiz",
     "link": "https://pgmgent-pgm-3.github.io/opdracht-1---developer-quiz-Meastrix001/",
     "desc": "A Developer quiz made with in JavaScript with a WIP quiz API.",
-    "github": "https://github.com/pgmgent-pgm-3/opdracht-1---developer-quiz-Meastrix001"
+    "github": "https://github.com/pgmgent-pgm-3/opdracht-1---developer-quiz-Meastrix001",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ]
   },
   {
     "number": "110",
@@ -105,16 +164,28 @@
     "name": "A WIP social app made in PHP",
     "link": "https://github.com/Meastrix001/PHPSocials",
     "desc": "A social app made with php and MySql databases, this was my first real website with php, including user management, posts, comments, like, friends/followers",
-    "github": "https://github.com/Meastrix001/PHPSocials"
+    "github": "https://github.com/Meastrix001/PHPSocials",
+    "tags": [
+      "Php",
+      "HTML",
+      "CSS",
+      "MySQL"
+    ]
   },
   {
     "number": "120",
-    "linkTo": "Go to Repository.",
+    "linkTo": "Click to Preview.",
     "logo": "assets/img/logos/wikimedia.png",
     "name": "Wikimedia",
     "link": "https://meastrix001.github.io/WikiMedia/",
     "desc": "A movie app made in ReactJS, using the 'themoviedb' API, reusable components, search function, Firebase implementation, account management, pagination and more.",
-    "github": "https://github.com/Meastrix001/WikiMedia"
+    "github": "https://github.com/Meastrix001/WikiMedia",
+    "tags": [
+      "React",
+      "Firebase",
+      "HTML",
+      "CSS"
+    ]
   },
   {
     "number": "130",
@@ -122,8 +193,14 @@
     "logo": "assets/img/logos/diorama.png",
     "name": "Diorama",
     "link": "https://pgmgent-2122-im.github.io/diorama-Meastrix001/",
-
     "desc": "A diorama made in blender and later converted to a website using reactJS + ThreeJs, WIP animations.",
-    "github": "https://github.com/pgmgent-2122-im/diorama-Meastrix001"
+    "github": "https://github.com/pgmgent-2122-im/diorama-Meastrix001",
+    "tags": [
+      "React",
+      "ThreeJS",
+      "Blender",
+      "HTML",
+      "CSS"
+    ]
   }
 ]

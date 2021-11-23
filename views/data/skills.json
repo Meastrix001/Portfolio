@@ -74,7 +74,7 @@
   {
     "skill": "Php",
     "logo": "assets/img/logos/php.png",
-    "learning": 1,
+    "learning": 0,
     "favourite": false
   },
   {
@@ -92,7 +92,7 @@
   {
     "skill": "MySQL",
     "logo": "assets/img/logos/mysql.png",
-    "learning": 1,
+    "learning": 0,
     "favourite": false
   },
   {
@@ -104,6 +104,18 @@
   {
     "skill": "Blender",
     "logo": "assets/img/logos/blender.png",
+    "learning": 0,
+    "favourite": false
+  },
+  {
+    "skill": "WordPress",
+    "logo": "assets/img/logos/wordPress.png",
+    "learning": 1,
+    "favourite": false
+  },
+  {
+    "skill": "React Native",
+    "logo": "assets/img/logos/reactNative.png",
     "learning": 1,
     "favourite": false
   }

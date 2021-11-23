@@ -118,5 +118,11 @@
     "logo": "assets/img/logos/reactNative.png",
     "learning": 1,
     "favourite": false
+  },
+  {
+    "skill": "Electron",
+    "logo": "assets/img/logos/electron.png",
+    "learning": 1,
+    "favourite": false
   }
 ]

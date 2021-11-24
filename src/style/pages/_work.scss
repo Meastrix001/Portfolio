@@ -4,7 +4,7 @@
 
   &--menu {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100vh;
@@ -20,6 +20,8 @@
       ul {
         padding: 1rem;
         padding-inline-start: 20px;
+        display: flex;
+        flex-wrap: wrap-reverse;
 
         li {
           margin-bottom: 0.5rem;

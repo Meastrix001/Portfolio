@@ -1,138 +1,161 @@
-.work{
-display: flex;
-flex-wrap: wrap;
-&--menu{
+.work {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  max-height: 80vh;
-  section{
-    width: 100%;
-    div{
-      width: 100%;
-    }
-    ul{
-      padding: 1rem;
-      padding-inline-start: 20px;
-      li{
-        margin-bottom: 0.5rem;
-        max-width: 100%;
-        list-style: none;
-        color: black;
-        min-width: fit-content;
-        a{
-          border-bottom: 4px solid $Rood;
-          color: $Rood;
-          font-weight: 700;
-          font-size: 1.2rem;
-          transition: 0.075s ease all;
+  flex-wrap: wrap;
 
-          &:hover{
-          text-decoration: none !important;
-          border-bottom: 4px solid $Rood--hover;
-          text-decoration: underline $Rood--hover;
-          transition: 0.075s ease all;
+  &--menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 80vh;
+
+    section {
+      width: 100%;
+
+      div {
+        width: 100%;
+      }
+
+      ul {
+        padding: 1rem;
+        padding-inline-start: 20px;
+
+        li {
+          margin-bottom: 0.5rem;
+          max-width: 100%;
+          list-style: none;
+          color: black;
+          min-width: fit-content;
+
+          a {
+            border-bottom: 4px solid $Rood;
+            color: $Rood;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: 0.075s ease all;
+
+            &:hover {
+              text-decoration: none !important;
+              border-bottom: 4px solid $Rood--hover;
+              text-decoration: underline $Rood--hover;
+              transition: 0.075s ease all;
+            }
+          }
+        }
+      }
+
+      @media (min-width: 1200px) {
+        max-width: 75%;
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          li {
+            width: 50%;
+
+            a {}
           }
         }
       }
     }
-    @media (min-width: 1200px) {
-      max-width: 75%;
-          ul{
-            display: flex;
-            flex-wrap: wrap;
-            li{
-              width: 50%;
-              a{
-
-              }
-          }
-        }
-    }
   }
-}
-&--filter{
-width: 100%;
-padding: 6rem 0;
-h2{
-  display: flex;
-  justify-content: space-between;
-}
-.clear-btn{
-  display: none;
-}
-  ul{
-    padding-top: 2rem;
-    padding-inline-start: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    li{
+
+  &--filter {
+    width: 100%;
+    padding: 6rem 0;
+
+    h2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .clear-btn {
+      display: none;
+    }
+
+    ul {
+      padding-top: 2rem;
+      padding-inline-start: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      li {
         transition: 0.75s ease all;
         list-style: none;
         margin-bottom: 1rem;
-      p{
-        background-color: $Rood;
-        border-radius: 50px;
-        margin: 0;
-        padding: 0.5rem;
-        &:hover{
-          transition: 0.75s ease all;
-          background-color: $Rood--hover;
+
+        p {
+          background-color: $Rood;
+          border-radius: 50px;
+          margin: 0;
+          padding: 0.5rem;
+
+          &:hover {
+            transition: 0.75s ease all;
+            background-color: $Rood--hover;
+          }
         }
-      }
-      a{
-        text-decoration: none;
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
-}
-&--cards{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  
-  &--card{
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #40404052;
-    &.hidden{
-      display: none;
-    }
-    &.shown{
-      transition: 0.125s ease all;
-      display: block;
-    }
-    @media (min-width:750px) {
-      &.shown{
-        transition: 0.125s ease all;
-        display: flex;
-      }
-      &:nth-child(2n+0){
-      flex-direction: row-reverse;
-      transition: 0.125s ease all;
-      }
-    }
 
-      h2{
-        color: $Rood;
+  &--cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+
+    &--card {
+      padding: 1rem;
+      margin: 1rem;
+      background-color: #40404052;
+
+      &.hidden {
+        display: none;
+      }
+
+      &.shown {
+        transition: 0.125s ease all;
+        display: block;
+      }
+
+      @media (min-width:750px) {
+        &.shown {
+          transition: 0.125s ease all;
+          display: flex;
         }
-      a{
+
+        &:nth-child(2n+0) {
+          flex-direction: row-reverse;
+          transition: 0.125s ease all;
+        }
+      }
+
+      h2 {
+        color: $Rood;
+      }
+
+      a {
         width: 49%;
         height: inherit;
         position: relative;
-        p{
+
+        p {
           margin-top: -1.5rem;
           transition: 0.1s ease all;
           background-color: $Rood;
           opacity: 100;
           padding: 0.25rem;
 
-          @media(min-width:750px){
-          margin-top: 0;
+          @media(min-width:750px) {
+            margin-top: 0;
 
             top: 0;
             position: absolute;
@@ -141,45 +164,49 @@ h2{
           }
         }
 
-        &:hover{
-          p{
+        &:hover {
+          p {
             transition: 0.075s ease all;
             opacity: 100;
           }
         }
-        img{
+
+        img {
           max-width: 100%;
           width: 100%;
           max-height: 25rem;
           height: 100%;
           transition: 0.125s ease;
-  
-          &:hover{
-              box-shadow: -0.5rem -0.5rem $Rood;
-              transition: 0.125s ease;
-              cursor: pointer;
-              
+
+          &:hover {
+            box-shadow: -0.5rem -0.5rem $Rood;
+            transition: 0.125s ease;
+            cursor: pointer;
+
           }
         }
       }
-      div{
+
+      div {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin: auto ;
+        margin: auto;
         width: 100%;
         box-sizing: border-box;
         display: flex;
         transition: 0.125s ease all;
         margin-bottom: 37vh;
+
         @media (min-width:750px) {
           margin: 0 1rem;
           width: 49%;
           transition: 0.125s ease all;
         }
-        h4{
 
-          a{
+        h4 {
+
+          a {
             color: $LichtWit;
           }
         }

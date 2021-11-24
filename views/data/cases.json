@@ -184,7 +184,7 @@
       "React",
       "Firebase",
       "HTML",
-      "CSS"
+      "Sass"
     ]
   },
   {
@@ -193,7 +193,7 @@
     "logo": "assets/img/logos/diorama.png",
     "name": "Diorama",
     "link": "https://pgmgent-2122-im.github.io/diorama-Meastrix001/",
-    "desc": "A diorama made in blender and later converted to a website using reactJS + ThreeJs, WIP animations.",
+    "desc": "A diorama made in blender and later converted to a website using reactJS + ThreeJs & Animations.",
     "github": "https://github.com/pgmgent-2122-im/diorama-Meastrix001",
     "tags": [
       "React",

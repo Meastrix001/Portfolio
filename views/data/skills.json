@@ -124,5 +124,11 @@
     "logo": "assets/img/logos/electron.png",
     "learning": 1,
     "favourite": false
+  },
+  {
+    "skill": "Expo-cli",
+    "logo": "assets/img/logos/expocli.png",
+    "learning": 1,
+    "favourite": false
   }
 ]

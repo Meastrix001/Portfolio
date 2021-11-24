@@ -21,7 +21,7 @@
         padding: 1rem;
         padding-inline-start: 20px;
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
 
         li {
           margin-bottom: 0.5rem;
@@ -53,6 +53,7 @@
         ul {
           display: flex;
           flex-wrap: wrap-reverse;
+          flex-direction: unset;
 
           li {
             width: 50%;

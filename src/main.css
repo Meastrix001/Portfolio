@@ -2664,7 +2664,7 @@ html {
   padding: 1rem;
   padding-inline-start: 20px;
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-direction: column-reverse;
 }
 .work--menu section ul li {
   margin-bottom: 0.5rem;
@@ -2693,6 +2693,7 @@ html {
   .work--menu section ul {
     display: flex;
     flex-wrap: wrap-reverse;
+    flex-direction: unset;
   }
   .work--menu section ul li {
     width: 50%;

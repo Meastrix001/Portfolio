@@ -15,7 +15,7 @@ eleventyNavigation:
       <div class="titleUnderlined"></div>
       <ul>
         {% for item in cases %}
-          <li><a href="#{{item.number}}">{{item.name}}</a></li>
+          <li><a id="{{item.name}}" href="#{{item.number}}">{{item.name}}</a></li>
         {% endfor %}
       </ul>
     </section>

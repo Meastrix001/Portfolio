@@ -15,7 +15,7 @@ eleventyNavigation:
       <div class="titleUnderlined"></div>
       <ul>
         {% for item in cases %}
-          <li><a id="{{item.name}}" href="#{{item.number}}">{{item.name}}</a></li>
+          <li><a href="#{{item.number}}">{{item.name}}</a></li>
         {% endfor %}
       </ul>
     </section>
@@ -27,7 +27,7 @@ eleventyNavigation:
     {% for item in techStack %}
       <li>
         <a href="?tag={{item.skill}}#works">
-          <p>{{ item.skill }}</p>
+          <p id="{{item.skill}}">{{ item.skill }}</p>
         </a>
       </li>
     {% endfor %}

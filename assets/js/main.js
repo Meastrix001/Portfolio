@@ -68,6 +68,7 @@
                   work.closest(".work--cards--card").classList.add("shown")
                 }
               }
+              
             )
     }
   };

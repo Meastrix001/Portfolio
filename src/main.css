@@ -1608,10 +1608,10 @@ mark,
   text-align: center;
   margin-bottom: 0;
   height: fit-content;
-  border-bottom: 2px solid #F24C4C;
-  border-left: 2px solid #F24C4C;
-  border-top: 2px solid rgba(255, 255, 255, 0);
-  border-right: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 4px solid #F24C4C;
+  border-left: 4px solid #F24C4C;
+  border-top: 4px solid rgba(255, 255, 255, 0);
+  border-right: 4px solid rgba(255, 255, 255, 0);
   padding: 5px;
   transition: 0.125s ease all;
 }
@@ -1621,8 +1621,8 @@ mark,
   }
 }
 .logo:hover {
-  border-top: 2px solid #F24C4C;
-  border-right: 2px solid #F24C4C;
+  border-top: 4px solid #F24C4C;
+  border-right: 4px solid #F24C4C;
   transition: 0.125s ease all;
 }
 .logo a {
@@ -2217,6 +2217,7 @@ html {
 }
 .article--content h3 {
   color: black;
+  width: fit-content;
 }
 .article--content h3:hover {
   cursor: pointer;
@@ -2241,6 +2242,7 @@ html {
   color: black;
   text-align: right;
   margin: 0 0 0 auto;
+  width: fit-content;
 }
 .portfolio--content h3:hover {
   cursor: pointer;
@@ -2313,6 +2315,8 @@ html {
 .skills--skills h3 {
   color: black;
   text-align: right;
+  width: fit-content;
+  margin-left: auto;
 }
 .skills--skills h3:hover svg {
   transform: translateX(7px);
@@ -2473,6 +2477,9 @@ html {
   .services--hero--content {
     width: 50%;
   }
+}
+.services--hero--content h3 {
+  width: fit-content;
 }
 .services--hero--content h3 svg {
   fill: #F24C4C;
@@ -2682,9 +2689,10 @@ html {
 }
 .work--menu section ul li a:hover {
   text-decoration: none !important;
-  border-bottom: 4px solid #ed2a2a;
-  text-decoration: underline #ed2a2a;
-  transition: 0.075s ease all;
+  border-bottom: 4px solid #d31616;
+  color: #d31616;
+  text-decoration: underline #d31616;
+  transition: 0.1s ease all;
 }
 @media (min-width: 1200px) {
   .work--menu section {
@@ -2726,11 +2734,15 @@ html {
   background-color: #F24C4C;
   border-radius: 50px;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.9rem;
+  margin: 0.5rem;
+}
+.work--filter ul li p.active {
+  background-color: #d31616;
 }
 .work--filter ul li p:hover {
-  transition: 0.75s ease all;
-  background-color: #ed2a2a;
+  transition: 0.25s ease all;
+  background-color: #d31616;
 }
 .work--filter ul li a {
   text-decoration: none;

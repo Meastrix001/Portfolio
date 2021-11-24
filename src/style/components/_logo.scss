@@ -6,10 +6,10 @@
     text-align: center;
     margin-bottom: 0;
     height: fit-content;
-    border-bottom: 2px solid $Rood;
-    border-left: 2px solid $Rood;
-    border-top: 2px solid rgba(255, 255, 255, 0);
-    border-right: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 4px solid $Rood;
+    border-left: 4px solid $Rood;
+    border-top: 4px solid rgba(255, 255, 255, 0);
+    border-right: 4px solid rgba(255, 255, 255, 0);
     padding: 5px;
     transition: 0.125s ease all;
 
@@ -17,8 +17,8 @@
     font-size: 2rem;
     }
     &:hover{
-        border-top: 2px solid $Rood;
-        border-right: 2px solid $Rood;
+        border-top: 4px solid $Rood;
+        border-right: 4px solid $Rood;
         transition: 0.125s ease all;
     }
     a{

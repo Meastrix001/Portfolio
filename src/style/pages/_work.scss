@@ -40,8 +40,9 @@
             &:hover {
               text-decoration: none !important;
               border-bottom: 4px solid $Rood--hover;
+              color: $Rood--hover;
               text-decoration: underline $Rood--hover;
-              transition: 0.075s ease all;
+              transition: 0.100s ease all;
             }
           }
         }
@@ -92,10 +93,13 @@
           background-color: $Rood;
           border-radius: 50px;
           margin: 0;
-          padding: 0.5rem;
-
+          padding: 0.9rem;
+          margin: 0.5rem;
+          &.active{
+            background-color: $Rood--hover;
+          }
           &:hover {
-            transition: 0.75s ease all;
+            transition: 0.250s ease all;
             background-color: $Rood--hover;
           }
         }

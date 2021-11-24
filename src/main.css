@@ -2692,7 +2692,7 @@ html {
   }
   .work--menu section ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
   .work--menu section ul li {
     width: 50%;

@@ -56,20 +56,24 @@
             }
             this.works.forEach(work => {
               if (getParam && work.dataset.id === getParam || getParam === null || getParam === undefined) {
-                work.closest(".work--cards--card").classList.add("shown")
+                work.closest(".work--cards--card").classList.add("shown");
               } else if ( getParam && work.closest(".work--cards--card").classList.contains("shown") !== true) {
-                    work.closest(".work--cards--card").classList.add("hidden")
+                    work.closest(".work--cards--card").classList.add("hidden");
 
                 } else if(getParam && work.closest(".work--cards--card").classList.contains("shown") !== false) {
 
-                  work.closest(".work--cards--card").classList.add("shown")
+                  work.closest(".work--cards--card").classList.add("shown");
 
                 } else {
-                  work.closest(".work--cards--card").classList.add("shown")
+                  work.closest(".work--cards--card").classList.add("shown");
                 }
               }
-              
-            )
+              )
+              this.activeFilter = document.getElementById(`${getParam}`)
+              console.log(this.activeFilter)
+              if (this.activeFilter) {
+                this.activeFilter.classList.add("active")
+              }
     }
   };
   app.initialize();

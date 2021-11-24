@@ -51,7 +51,7 @@
     "skill": "Tailwind",
     "logo": "assets/img/logos/tailwind.png",
     "learning": 0,
-    "favourite": true
+    "favourite": false
   },
   {
     "skill": "NunJucks",
@@ -75,7 +75,7 @@
     "skill": "Php",
     "logo": "assets/img/logos/php.png",
     "learning": 0,
-    "favourite": false
+    "favourite": true
   },
   {
     "skill": "TypeScript",

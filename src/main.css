@@ -1801,6 +1801,9 @@ body {
   flex: 1;
   height: 80vh;
   z-index: 1;
+  -moz-animation: fadeInAnimation 0.225s ease;
+  -webkit-animation: fadeInAnimation 0.225s ease;
+  animation: fadeInAnimation 0.225s ease;
 }
 .main--white {
   background-color: white;
@@ -1809,6 +1812,14 @@ body {
   background-color: #1D1D1D;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .wrapper {
   min-height: 80vh;
   height: fit-content;

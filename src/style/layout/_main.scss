@@ -8,8 +8,19 @@
     &--black{
         background-color: $Zwart;
     }
+    -moz-animation: fadeInAnimation 0.225s ease;
+    -webkit-animation: fadeInAnimation 0.225s ease;
+    animation: fadeInAnimation 0.225s ease;
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  }
 .wrapper {
     min-height: 80vh;
     height: fit-content;

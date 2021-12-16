@@ -9,16 +9,13 @@
       this.menuBtn = document.querySelector('.menu-btn');
       this.nav = document.querySelector('.nav');
       this.navExit = document.querySelector('.menu-btn-exit');
-      this.age = document.getElementById('age')
-      this.works = document.querySelectorAll(".work-tag")
-      this.clearBtn = document.querySelector('.clear-btn')
-      if (this.works) {
-        this.filterWorks()
-      }
-      if(this.age) {
-        this.getAge();
-      }
+      this.age = document.getElementById('age');
+      this.works = document.querySelectorAll('.work-tag');
+      this.clearBtn = document.querySelector('.clear-btn');
+      if (this.works) { this.filterWorks(); };
+      if (this.age) { this.getAge(); };
     },
+
     registerEventListeners () {
       if (this.btnToTopElement !== null) {
         this.btnToTopElement.addEventListener('click', (ev) => {
@@ -28,15 +25,18 @@
             behavior: 'smooth',
           });
         });
-      }
+      };
+
       this.menuBtn.addEventListener("click", ev => {
-        this.nav.classList.toggle('open'),
-        this.navExit.classList.toggle('state')
-      })
+        this.nav.classList.toggle('open');
+        this.navExit.classList.toggle('state');
+      });
+
       this.navExit.addEventListener("click", ev => {
-        this.nav.classList.toggle('open'),
-        this.navExit.classList.toggle('state')
-      })
+        this.nav.classList.toggle('open');
+        this.navExit.classList.toggle('state');
+      });
+
     },
 
     getAge() {
@@ -45,15 +45,17 @@
       var difference = Date.now() - birthDate.getTime(); 
       var  ageDate = new Date(difference); 
       var calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
-      return this.age.innerHTML = calculatedAge
+      return this.age.innerHTML = calculatedAge;
     },
+
     filterWorks() {
-            const searchURL = window.location.search
-            const searchForParam = new URLSearchParams(searchURL)
-            const getParam = searchForParam.get('tag')
+            const searchURL = window.location.search;
+            const searchForParam = new URLSearchParams(searchURL);
+            const getParam = searchForParam.get('tag');
             if(getParam) {
-              this.clearBtn.style.display = "block"
-            }
+              this.clearBtn.style.display = "block";
+            };
+            
             this.works.forEach(work => {
               if (getParam && work.dataset.id === getParam || getParam === null || getParam === undefined) {
                 work.closest(".work--cards--card").classList.add("shown");

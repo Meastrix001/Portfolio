@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --typewriterSpeed: 3.5s;
+  --typewriterCharacters: 1000;
+  --showDelay: 0.500s
+}
+
 .hero {
 
   &--content {
@@ -11,7 +17,28 @@ html {
       max-width: 100%;
 
       span {
-        color: $Rood;
+
+        &:last-of-type {
+          position: relative;
+          width: max-content;
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+
+          &::before {
+            filter: blur(3px);
+            background-color: $Rood;
+            animation: curtain var(--typewriterSpeed) steps(var(--typewriterCharacters)) var(--showDelay) forwards;
+          }
+
+        }
       }
 
       span.underlined {
@@ -32,6 +59,10 @@ html {
 
 .experiences {
   margin-top: 1rem;
+
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay)) forwards;
 
   &--cards {
     @media (min-width: 875px) {
@@ -219,6 +250,7 @@ html {
       text-align: right;
       width: fit-content;
       margin-left: auto;
+
       &:hover {
         svg {
           transform: translateX(7px);

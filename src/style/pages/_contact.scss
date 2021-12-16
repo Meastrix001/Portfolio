@@ -1,70 +1,50 @@
-.contact{
-border: 1px solid gray;
-margin-top: -5rem;
-background-color: white;
-max-width: 50rem;
-  &--hero{
+.contact {
 
-    &--image{
-      max-width: 100%;
-    }
-  }
-  &--form{
-    padding-top: 4rem;
-    &--inputs{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-section{
-  display: flex;
-  flex-direction: column;
-width: 42%;
-}
-input{
-  height: 3rem;
-  width:100%;
-  margin: 0rem 0 1rem 0;
-}
-label{
-  color: black;
-}
-    }
-    &--message{
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 1.225s ease 0.075s forwards;
+
+  section {
+
+    p {
+      width: fit-content;
+      transition: 0.075s ease all;
       display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      margin-bottom: 2rem;
-      input{
-        width: 90%;
-        height: 10vw;
-        margin: 1rem auto;
-        box-sizing: border-box;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        background-color: white;
+        padding: 0.30rem;
+        border-radius: 50px;
+        margin-right: 0.5rem;
+        width: 2rem;
+        height: 2rem;
       }
-    }
-    &--submit{
-      width: 90%;
-      margin: auto;
-      display: flex;
-      justify-content: space-evenly;
-      P{
-        color: black;
-        font-size: 0.8rem;
-        text-align: center;
-        margin: auto auto;
-      }
-      button{
-        background-color: $Rood;
-        border: none;
-        padding: 0.5rem 1rem;
+
+      a {
         color: white;
-        transition: 0.125s ease;
-        width: 8rem;
-        &:hover{
-          background-color: red;
-          transition: 0.125s ease;
+        position: absolute;
+        border-left: 0px solid #f51c40;
+        margin-left: 2.5rem;
+        padding-left: 0.2rem;
+      }
+
+      &:hover {
+
+        a {
+          color: $Rood;
+          transition: 0.125s ease all;
+          text-decoration: none;
+          animation: hover 0.075s ease forwards;
+        }
+
+        img {
+          transition: 0.125s ease all;
+          background-color: $Rood;
         }
       }
-
     }
+
   }
 }

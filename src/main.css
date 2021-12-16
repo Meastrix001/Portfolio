@@ -1,5 +1,26 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@keyframes curtain {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes hover {
+  to {
+    border-left: 4px solid #F24C4C;
+  }
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -1801,9 +1822,9 @@ body {
   flex: 1;
   height: 80vh;
   z-index: 1;
-  -moz-animation: fadeInAnimation 0.225s ease;
-  -webkit-animation: fadeInAnimation 0.225s ease;
-  animation: fadeInAnimation 0.225s ease;
+  -moz-animation: fadeInAnimation 0.05s ease;
+  -webkit-animation: fadeInAnimation 0.05s ease;
+  animation: fadeInAnimation 0.05s ease;
 }
 .main--white {
   background-color: white;
@@ -1893,7 +1914,11 @@ body {
 .text-black {
   color: black;
 }
-.text-black h1, .text-black h2, .text-black h3, .text-black h4, .text-black p,
+.text-black h1,
+.text-black h2,
+.text-black h3,
+.text-black h4,
+.text-black p,
 .text-black a {
   color: black;
 }
@@ -1906,7 +1931,8 @@ a:hover {
   background-color: white;
 }
 
-.background_none, .article.background_none {
+.background_none,
+.article.background_none {
   background-color: unset;
 }
 
@@ -2131,12 +2157,32 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --typewriterSpeed: 3.5s;
+  --typewriterCharacters: 1000;
+  --showDelay: 0.500s ;
+}
+
 .hero--content h1 {
   width: 50rem;
   max-width: 100%;
 }
-.hero--content h1 span {
-  color: #F24C4C;
+.hero--content h1 span:last-of-type {
+  position: relative;
+  width: max-content;
+}
+.hero--content h1 span:last-of-type::before, .hero--content h1 span:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero--content h1 span:last-of-type::before {
+  filter: blur(3px);
+  background-color: #F24C4C;
+  animation: curtain var(--typewriterSpeed) steps(var(--typewriterCharacters)) var(--showDelay) forwards;
 }
 .hero--content h1 span.underlined {
   text-decoration: underline dashed #F24C4C;
@@ -2154,6 +2200,9 @@ html {
 
 .experiences {
   margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay)) forwards;
 }
 @media (min-width: 875px) {
   .experiences--cards {
@@ -2204,7 +2253,6 @@ html {
   margin: auto;
   max-height: 70vh;
   max-width: 100%;
-  margin-bottom: 2rem;
 }
 .article--content {
   align-self: center;
@@ -2453,8 +2501,16 @@ html {
 
 .services {
   height: 80vh;
+  transform: translateY(3rem);
+  animation: fadeInUp 1.225s ease 0.175s forwards;
+  opacity: 0;
 }
-.services h1, .services h2, .services h3, .services h4, .services p, .services a {
+.services h1,
+.services h2,
+.services h3,
+.services h4,
+.services p,
+.services a {
   white: black;
 }
 .services--hero--section {
@@ -2577,7 +2633,9 @@ html {
 .services--container {
   background-color: white;
 }
-.services--container h2, .services--container h3, .services--container p {
+.services--container h2,
+.services--container h3,
+.services--container p {
   color: black;
 }
 .services--container--act--content {
@@ -2652,6 +2710,9 @@ html {
 .work {
   display: flex;
   flex-wrap: wrap;
+  transform: translateY(3rem);
+  animation: fadeInUp 1.225s ease 0.175s forwards;
+  opacity: 0;
 }
 .work--menu {
   display: flex;
@@ -2714,6 +2775,9 @@ html {
 .work--filter h2 {
   display: flex;
   justify-content: space-between;
+}
+.work--filter p.selectedFilter {
+  font-size: 3rem;
 }
 .work--filter .clear-btn {
   display: none;
@@ -2799,10 +2863,6 @@ html {
     transition: 0.075s ease all;
   }
 }
-.work--cards--card a:hover p {
-  transition: 0.075s ease all;
-  opacity: 100;
-}
 .work--cards--card a img {
   max-width: 100%;
   width: 100%;
@@ -2810,10 +2870,14 @@ html {
   height: 100%;
   transition: 0.125s ease;
 }
-.work--cards--card a img:hover {
+.work--cards--card a:hover img {
   box-shadow: -0.5rem -0.5rem #F24C4C;
   transition: 0.125s ease;
   cursor: pointer;
+}
+.work--cards--card a:hover p {
+  transition: 0.075s ease all;
+  opacity: 100;
 }
 .work--cards--card div {
   justify-content: center;
@@ -2838,13 +2902,22 @@ html {
 }
 
 .about {
+  transform: translateY(3rem);
+  animation: fadeInUp 1.225s ease 0.175s forwards;
+  opacity: 0;
   max-height: fit-content;
   min-height: 80vh;
 }
-.about h1, .about h2, .about h3, .about h4, .about p, .about a {
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about p,
+.about a {
   color: black;
 }
-.about .article--section .article--content h2, .about .article--section .article--content p {
+.about .article--section .article--content h2,
+.about .article--section .article--content p {
   color: white;
 }
 .about--qoute {
@@ -2862,7 +2935,8 @@ html {
 .about--video div {
   display: flex;
 }
-.about--video div video, .about--video div embed {
+.about--video div video,
+.about--video div embed {
   height: 34rem;
   margin: auto;
   width: fit-content;
@@ -2897,7 +2971,8 @@ html {
     align-items: center;
     margin-top: 0rem;
   }
-  .about--work--card:nth-of-type(2) section h3, .about--work--card:nth-of-type(2) section P {
+  .about--work--card:nth-of-type(2) section h3,
+.about--work--card:nth-of-type(2) section P {
     width: 50%;
   }
 }
@@ -2924,11 +2999,13 @@ html {
 .about--work--card img {
   max-width: 100%;
 }
-.about--work--card h2, .about--work--card p {
+.about--work--card h2,
+.about--work--card p {
   color: black;
   text-align: left;
 }
-.about--work--card--color h2, .about--work--card--color p {
+.about--work--card--color h2,
+.about--work--card--color p {
   margin: 0;
   margin-block-end: 0;
   margin-block-start: 0;
@@ -2947,68 +3024,39 @@ html {
   margin: auto auto;
 }
 .contact {
-  border: 1px solid gray;
-  margin-top: -5rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 1.225s ease 0.075s forwards;
+}
+.contact section p {
+  width: fit-content;
+  transition: 0.075s ease all;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact section p img {
   background-color: white;
-  max-width: 50rem;
+  padding: 0.3rem;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
 }
-.contact--hero--image {
-  max-width: 100%;
-}
-.contact--form {
-  padding-top: 4rem;
-}
-.contact--form--inputs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.contact--form--inputs section {
-  display: flex;
-  flex-direction: column;
-  width: 42%;
-}
-.contact--form--inputs input {
-  height: 3rem;
-  width: 100%;
-  margin: 0rem 0 1rem 0;
-}
-.contact--form--inputs label {
-  color: black;
-}
-.contact--form--message {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-.contact--form--message input {
-  width: 90%;
-  height: 10vw;
-  margin: 1rem auto;
-  box-sizing: border-box;
-}
-.contact--form--submit {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-.contact--form--submit P {
-  color: black;
-  font-size: 0.8rem;
-  text-align: center;
-  margin: auto auto;
-}
-.contact--form--submit button {
-  background-color: #F24C4C;
-  border: none;
-  padding: 0.5rem 1rem;
+.contact section p a {
   color: white;
-  transition: 0.125s ease;
-  width: 8rem;
+  position: absolute;
+  border-left: 0px solid #f51c40;
+  margin-left: 2.5rem;
+  padding-left: 0.2rem;
 }
-.contact--form--submit button:hover {
-  background-color: red;
-  transition: 0.125s ease;
+.contact section p:hover a {
+  color: #F24C4C;
+  transition: 0.125s ease all;
+  text-decoration: none;
+  animation: hover 0.075s ease forwards;
+}
+.contact section p:hover img {
+  transition: 0.125s ease all;
+  background-color: #F24C4C;
 }

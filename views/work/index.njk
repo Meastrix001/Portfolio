@@ -27,7 +27,7 @@ eleventyNavigation:
     {% for item in techStack %}
       <li>
         <a href="?tag={{item.skill}}#works">
-          <p id="{{item.skill}}">{{ item.skill }}</p>
+          <p class="work--filter-option" id="{{item.skill}}">{{ item.skill }}</p>
         </a>
       </li>
     {% endfor %}

@@ -42,7 +42,7 @@ html {
       }
 
       span.underlined {
-        text-decoration: underline dashed $Rood;
+        // text-decoration: underline $Rood;
         color: white;
       }
     }
@@ -60,9 +60,7 @@ html {
 .experiences {
   margin-top: 1rem;
 
-  opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay)) forwards;
 
   &--cards {
     @media (min-width: 875px) {
@@ -79,6 +77,24 @@ html {
       box-sizing: border-box;
       margin: 0.5rem;
       padding: 1rem 1rem 1rem 1rem;
+
+      &:nth-child(1) {
+        opacity: 0;
+        animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay)) forwards;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+
+        animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay) + 0.50s) forwards;
+      }
+
+      &:nth-child(3) {
+        opacity: 0;
+
+        animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay) + 1s) forwards;
+
+      }
 
       h2 {
         transition: 0.2s ease;

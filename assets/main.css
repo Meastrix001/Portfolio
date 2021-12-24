@@ -2185,7 +2185,6 @@ html {
   animation: curtain var(--typewriterSpeed) steps(var(--typewriterCharacters)) var(--showDelay) forwards;
 }
 .hero--content h1 span.underlined {
-  text-decoration: underline dashed #F24C4C;
   color: white;
 }
 
@@ -2200,9 +2199,7 @@ html {
 
 .experiences {
   margin-top: 1rem;
-  opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay)) forwards;
 }
 @media (min-width: 875px) {
   .experiences--cards {
@@ -2219,6 +2216,18 @@ html {
   box-sizing: border-box;
   margin: 0.5rem;
   padding: 1rem 1rem 1rem 1rem;
+}
+.experiences--cards--content:nth-child(1) {
+  opacity: 0;
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay)) forwards;
+}
+.experiences--cards--content:nth-child(2) {
+  opacity: 0;
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay) + 0.50s) forwards;
+}
+.experiences--cards--content:nth-child(3) {
+  opacity: 0;
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay) + 1s) forwards;
 }
 .experiences--cards--content h2 {
   transition: 0.2s ease;

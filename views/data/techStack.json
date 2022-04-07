@@ -42,5 +42,13 @@
   {
     "skill": "Blender",
     "logo": "assets/img/logos/blender.png"
+  },
+    {
+    "skill": "VueJS",
+    "logo": "assets/img/logos/blender.png"
+  },
+    {
+    "skill": "Bulma.io",
+    "logo": "assets/img/logos/blender.png"
   }
 ]

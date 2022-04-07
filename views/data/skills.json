@@ -120,15 +120,15 @@
     "favourite": false
   },
   {
-    "skill": "Electron",
-    "logo": "assets/img/logos/electron.png",
-    "learning": 1,
-    "favourite": false
+    "skill": "VueJS",
+    "logo": "assets/img/logos/vue.png",
+    "learning": 0,
+    "favourite": true
   },
   {
-    "skill": "Expo-cli",
-    "logo": "assets/img/logos/expocli.png",
-    "learning": 1,
+    "skill": "Bulma.io",
+    "logo": "assets/img/logos/bulma.png",
+    "learning": 0,
     "favourite": false
   }
 ]

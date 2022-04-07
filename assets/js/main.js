@@ -43,7 +43,7 @@
       var bd = "09/11/2000";  
       var birthDate = new Date(bd);
       var difference = Date.now() - birthDate.getTime(); 
-      var  ageDate = new Date(difference); 
+      var ageDate = new Date(difference); 
       var calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
       return this.age.innerHTML = calculatedAge;
     },

@@ -2168,25 +2168,6 @@ html {
 .hero--content h1 {
   width: 50rem;
   max-width: 100%;
-}
-.hero--content h1 span:last-of-type {
-  position: relative;
-  width: max-content;
-}
-.hero--content h1 span:last-of-type::before, .hero--content h1 span:last-of-type::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.hero--content h1 span:last-of-type::before {
-  filter: blur(3px);
-  background-color: #F24C4C;
-  animation: curtain var(--typewriterSpeed) steps(var(--typewriterCharacters)) var(--showDelay) forwards;
-}
-.hero--content h1 span.underlined {
   color: white;
 }
 
@@ -2221,15 +2202,15 @@ html {
 }
 .experiences--cards--content:nth-child(1) {
   opacity: 0;
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay)) forwards;
+  animation: fadeInUp 2s ease 0.25s forwards;
 }
 .experiences--cards--content:nth-child(2) {
   opacity: 0;
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay) + 0.50s) forwards;
+  animation: fadeInUp 2s ease 0.75s forwards;
 }
 .experiences--cards--content:nth-child(3) {
   opacity: 0;
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + var(--showDelay) + 1s) forwards;
+  animation: fadeInUp 2s ease 1.25s forwards;
 }
 .experiences--cards--content h2 {
   transition: 0.2s ease;

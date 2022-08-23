@@ -61,7 +61,6 @@
       display: flex;
       justify-content: space-evenly;
       background-color: white;
-
     }
 
     &--card {
@@ -152,6 +151,14 @@
 
         p {}
       }
+    }
+  }
+
+  &--experience{
+    @media (min-width:875px) {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: white;
     }
   }
 }

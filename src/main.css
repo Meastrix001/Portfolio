@@ -3016,6 +3016,14 @@ html {
 .about--work--card--content {
   margin: auto auto;
 }
+@media (min-width: 875px) {
+  .about--experience {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+  }
+}
+
 .contact {
   opacity: 0;
   transform: translateY(3rem);

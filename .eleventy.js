@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
       includes: "includes",
       data: "data",
     },
-    // pathPrefix: "",
+    pathPrefix: "",
     templateFormats: ["html", "liquid", "md", "njk"],
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",

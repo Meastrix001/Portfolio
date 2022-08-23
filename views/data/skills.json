@@ -108,12 +108,6 @@
     "favourite": false
   },
   {
-    "skill": "WordPress",
-    "logo": "assets/img/logos/wordpress.png",
-    "learning": 1,
-    "favourite": false
-  },
-  {
     "skill": "React Native",
     "logo": "assets/img/logos/reactNative.png",
     "learning": 1,

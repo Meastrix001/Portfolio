@@ -2788,7 +2788,7 @@ html {
 }
 .work--filter ul li p {
   background-color: #F24C4C;
-  border-radius: 50px;
+  border-radius: 5px;
   margin: 0;
   padding: 0.9rem;
   margin: 0.5rem;
@@ -2813,6 +2813,7 @@ html {
   padding: 1rem;
   margin: 1rem;
   background-color: #40404052;
+  border-radius: 5px;
 }
 .work--cards--card.hidden {
   display: none;

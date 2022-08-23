@@ -98,7 +98,7 @@
 
         p {
           background-color: $Rood;
-          border-radius: 50px;
+          border-radius: 5px;
           margin: 0;
           padding: 0.9rem;
           margin: 0.5rem;
@@ -130,6 +130,7 @@
       padding: 1rem;
       margin: 1rem;
       background-color: #40404052;
+      border-radius: 5px;
 
       &.hidden {
         display: none;

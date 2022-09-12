@@ -57,7 +57,7 @@
     }
 }
 
-.header--background {
+.header__background {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -294,7 +294,7 @@ p {
         max-height: 40vh;
         max-width: 100%;
         background-color: white;
-        box-shadow: -1rem 0rem $Rood;
+        box-shadow: -1rem 0rem var(--red);
         transition: 0.125s ease all;
         margin-top: 2rem;
 

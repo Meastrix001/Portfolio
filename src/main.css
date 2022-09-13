@@ -2096,7 +2096,7 @@ p {
   max-height: 40vh;
   max-width: 100%;
   background-color: white;
-  box-shadow: -1rem 0rem #F24C4C;
+  box-shadow: -1rem 0rem var(--red);
   transition: 0.125s ease all;
   margin-top: 2rem;
 }

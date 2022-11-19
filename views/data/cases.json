@@ -182,13 +182,14 @@
     "logo": "assets/img/logos/jessy-rent.png",
     "name": "Jessy-rent",
     "link": "https://www.jessy-rent.com/",
-    "desc": "My latest project is a website I made for a person who started her own rental service. This website is mostly static as of now and is still W.I.P. This page is made with VueJS and common Vue libraries. This was also my first time both hosting and getting a domain set up through amazon AWS. This also has a basic laravel back-end ready",
+    "desc": "My latest project is a website I made for a person who started her own rental service. This website is mostly static as of now and is still W.I.P. This page is made with VueJS and common Vue libraries. This was also my first time both hosting and getting a domain set up through amazon AWS. This uses firebase/firestore for a admin autherization, reviews,booking availbility, owner adminpage",
     "github": "",
     "tags": [
       "VueJS",
       "HTML",
       "CSS",
-      "AWS"
+      "AWS",
+      "Firebase"
     ]
   }
 ]

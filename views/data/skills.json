@@ -80,8 +80,8 @@
   {
     "skill": "TypeScript",
     "logo": "assets/img/logos/typescript.png",
-    "learning": 1,
-    "favourite": false
+    "learning": 0,
+    "favourite": true
   },
   {
     "skill": "GraphQL",
@@ -108,9 +108,9 @@
     "favourite": false
   },
   {
-    "skill": "React Native",
-    "logo": "assets/img/logos/reactNative.png",
-    "learning": 1,
+    "skill": "Redux",
+    "logo": "assets/img/logos/redux.png",
+    "learning": 0,
     "favourite": false
   },
   {
